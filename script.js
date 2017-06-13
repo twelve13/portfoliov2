@@ -1,16 +1,13 @@
 $(document).ready(function(){
 
-// var redirect = $(".redirect");
 
 var aboutButton = $(".about-button");
-// var projectsButton = $(".projects-button");
+var projectsButton = $(".projects-button");
 // var contactButton = $(".contact-button");
 
-// var aboutOuter = $(".about-outer");
 var about = $(".about");
 var aboutClose = $(".about-close");
 var aboutWrapper = $(".about-wrapper");
-// var aboutListing = $(".about-listing");
 var aboutViewer = $(".about-viewer");
 
 // var projectsOuter = $(".projects-outer");
@@ -38,18 +35,6 @@ var aboutViewer = $(".about-viewer");
 // var cache = $(".cache");
 // var cacheProject = $(".cache-project");
 
-// var aboutClicked = false;
-// var projectsClicked = false;
-// var contactClicked = false;
-
-// var $window = $(window);
-// var width = $window.width();
-// var height = $window.height();
-
-// redirect.hide();
-// aboutWrapper.hide();
-//aboutClose.hide();
-//aboutViewer.hide();
 // projectsWrapper.hide();
 //endangeredProject.hide();
 //simonProject.hide();
@@ -57,64 +42,6 @@ var aboutViewer = $(".about-viewer");
 //projectsViewer.hide();
 // contactLink.hide();
 // contactClose.hide();
-
-
-// var aboutExpand = function() {
-// 	aboutViewer.show();
-
-// 	$("body").animate({
-// 		scrollTop: $(document).height() - $(window).height()
-// 	}, 1000)
-
-// 	aboutOuter.animate({
-// 		top: "+=60vh",
-// 	}, 1000)
-
-// 	if(width > height){
-// 		about.animate({
-// 			height: "80vh",
-// 			width: 0.9*width,
-// 			right: -(0.45*width)
-// 		}, 1000,)
-// 	}else{
-// 		about.animate({
-// 			height: "70vh",
-// 			width: 0.7*width,
-// 			right: -(0.35*width)
-// 		}, 1000,)
-// 	}
-	
-// 	aboutWrapper.show();
-// 	aboutClose.show();
-// 	aboutClicked = true;
-// 	if(width > height){
-// 		aboutListing.css("font-size", 0.016*width)
-// 	}else{
-// 		aboutListing.css("font-size", 0.025*width)
-// 	};
-// };
-
-
-// var aboutShrink = function(){
-// 	about.animate({
-// 		height: "83px",
-// 		width: "54px",
-// 		right: "0px"
-// 	}, 700)
-
-// 	$("body").animate({
-// 		scrollTop: -$(window).height()
-// 	}, 1000)
-
-// 	aboutOuter.animate({
-// 		top: "-=60vh",
-// 	}, 1000)
-
-// 	aboutWrapper.hide();
-// 	aboutClose.hide();
-// 	aboutViewer.hide(1000)
-// 	aboutClicked = false;	
-// };
 
 
 // var projectsExpand = function() {
@@ -208,54 +135,40 @@ var aboutViewer = $(".about-viewer");
 // 		contactClicked = false;
 // };
 
-var move = function() {
-			var x = 1;
+var movedown = function() {
+	var x = 1;
+	var id = setInterval(scrolldown, 10);
 
-			var id = setInterval(scrolldown, 10);
-			function scrolldown() {
-				if(x > 1800){
-				clearInterval(id);
-				} else {
-				window.scroll(0, x);
-				x = x + 10;
-				console.log("hi");
-				console.log(x);
-				}
-			}
+	function scrolldown() {
+		if(x > 1800){
+			clearInterval(id);
+		} else {
+			window.scroll(0, x);
+			x = x + 10;
 		}
+	}
+}
 
 var moveup = function() {
-			var x = 1801;
-
-			var id = setInterval(scrollup, 10);
-			function scrollup() {
-				if(x<=0){
-				clearInterval(id);
-				} else {
-				window.scroll(0, x);
-				x = x - 10;
-				console.log("hi");
-				console.log(x);
-				}
-			}
+	var x = 1801;
+	var id = setInterval(scrollup, 10);
+	
+	function scrollup() {
+		if(x<=0){
+			clearInterval(id);
+		} else {
+			window.scroll(0, x);
+			x = x - 10;
 		}
+	}
+}
 
 aboutButton.click(function(){
-	//if (aboutClicked === false){
-		about.removeClass("jqclickclose");
-		about.addClass("jqclick");
-		aboutWrapper.addClass("showme");
-		aboutViewer.addClass("show-about-viewer");
-		move();
-		// setInterval(function(){
-	
-		// 	window.scroll(0, x);
-		// 	x = x + 2;
-		// 	console.log("hi");
-
-		// }, y)
-		// window.scrollBy(0, 1000);
-	//}
+	about.removeClass("jqclickclose");
+	about.addClass("jqclick");
+	aboutWrapper.addClass("showme");
+	aboutViewer.addClass("show-about-viewer");
+	movedown();	
 });
 
 aboutClose.click(function(){
@@ -263,7 +176,6 @@ aboutClose.click(function(){
 	about.addClass("jqclickclose");
 	aboutWrapper.removeClass("showme");
 	moveup();
-// 	aboutShrink();
 });
 
 // projectsButton.click(function() {

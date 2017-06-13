@@ -1,0 +1,294 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: white;
+}
+
+.projects-viewer {
+	height: 100vh;
+	width: 100%;
+}
+
+.main {
+	align-content: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	justify-content: center;
+	width: 100%;
+}
+
+.nav-and-contact-viewer {
+	/*background-color: yellow;*/
+	display: flex;
+	height: 35vh;
+	width: 100%;
+}
+
+.nav {
+	align-items: center;
+	/*background-color: pink;*/
+	display: flex;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 200%;
+	justify-content: center;
+	width: 55%;
+}
+
+.nav div {
+	align-items: center;
+	background-color: black;
+	box-sizing: border-box;
+	border-radius: 18%;
+	color: white;
+	display: flex;
+	margin: 2%;
+	height: 60px;
+	justify-content: center;
+	padding: 5px;
+	width: 200px;
+}
+
+.contact-viewer {
+/*	background-color: orange;*/
+	width: 45%;
+}
+
+.contact-item {
+	box-sizing: border-box;
+	display: flex;
+	height: 50px;
+	left: 13px;
+/*	padding: 15px 50px;*/
+	position: absolute;
+	top: 50px;
+	width: 400px;
+}
+
+.bulletpoint {
+	background-color: black;
+	border-radius: 12px;
+	height: 35px;
+	width: 35px;
+}
+
+.contact-link {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 150%;
+	padding-left: 5%;
+	/*width: 100%;*/
+}
+
+.contact-link a {
+	color: black;
+}
+
+.name {
+/*	background-color: orange;*/
+	display: flex;
+	font-family: 'Viga', sans-serif;
+	height: 40vh;
+	justify-content: center;
+	width: 100%;
+}
+
+.name-letter {
+	font-size: 1500%;
+	height: 100%;
+	position: relative;
+}
+
+.about-outer {
+	height: 300px;
+	position: relative;
+	width: 120px;
+}
+
+.about {
+	align-items: space-around;
+	border: black solid 29px;
+	border-radius: 40%;
+	display: flex;
+	flex-wrap: wrap;
+	height: 83px;
+	justify-content: center;
+	overflow: hidden;
+	position: absolute;
+	top: 82px;
+	width: 54px;
+}
+
+.about-close {
+	margin-top: 2%;
+}
+
+span {
+	font-style: italic;
+}
+
+.listing-wrapper {
+/*	background-color: yellow;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+.about-listing {
+/*	background-color: purple;*/
+	box-sizing: border-box;
+	font-family: viga;
+/*	font-size: 130%;*/
+	padding-top: 2%;
+	text-align: center;
+	width: 90%;
+}
+
+.full-name {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 300%;
+}
+
+.experience {
+	align-items: flex-end;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: arial;
+	height: 150px;
+	justify-content: center;
+	margin-top: 1%;
+}
+
+.arts, .travel, .developer, .forensics, .improv {
+	border-left: solid transparent 60px;
+	border-right: solid transparent 60px;
+	height: 0px;
+	width: 0px;
+}
+
+.arts {
+	border-bottom: solid #857a83 60px;
+}
+
+.travel {
+	border-bottom: solid #5EBEB3 60px;
+}
+
+.developer {
+	border-bottom: solid #6EE4D3 60px;
+}
+
+.forensics {
+	border-bottom: solid #B9F2D2 60px;
+}
+
+.improv {
+	border-bottom: solid #F1E7DE 60px;
+}
+
+.experience p {
+	bottom: 100px;
+	color: #3b3b3b;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+}
+
+.projects-outer {
+	height: 300px;
+	position: relative;
+	width: 65px;
+}
+
+.projects {
+	background-color: black;
+	height: 180px;
+	margin: 0 15px;
+	overflow: hidden;
+	position: relative;
+	top: 40px;
+	width: 32px;
+}
+
+.projects-close {
+	color: white;
+	padding: 2% 2% 0 0;
+	text-align: right;
+}
+
+.projects-nav * {
+	color: gray;
+	display: flex;
+	font-size: 200%;
+}
+
+.project-info {
+	display: flex;
+}
+
+.image-and-links, .blurb {
+	box-sizing: border-box;
+	height: 50%;
+	padding: 5%;
+	width: 50%;
+}
+
+.studii, {
+	color: white;
+}
+
+.project-image img {
+	height: 100%;
+	width: 100%;
+}
+
+.project-links {
+	color: white;
+	display: flex;
+	font-size: 150%;
+	justify-content: space-around;
+	padding-top: 5%;
+}
+
+.blurb {
+	color: white;
+	font-size: 200%;
+}
+
+.contact-outer {
+	/*background-color: gray;*/
+	height: 300px;
+	position: relative;
+	width: 65px;
+}
+
+.contact {
+	background-color: black;
+	height: 120px;
+	margin: 0 15px;
+	position: relative;
+	top: 100px;
+	width: 32px;
+}
+
+.contact-close {
+	left: 42.5%;
+	position: absolute;
+	top: 25%;
+}
+
+.title-wrapper {
+	display: flex;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 300%;
+	height: 25vh;
+	justify-content: flex-end;
+	width: 80%;
+}
+
+.about-viewer {
+	height: 100vh;
+	width: 100%;
+}

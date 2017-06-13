@@ -3,8 +3,12 @@
 	margin: 0;
 }
 
-.projects-wrapper, .endangered-project, .simon-project, cache-project, .projects-viewer, .contact-link, .contact-close {
+.about-wrapper, .projects-wrapper, .endangered-project, .simon-project, cache-project, .projects-viewer, .contact-link, .contact-close {
 	display: none;
+}
+
+.showme {
+	display: block;
 }
 
 a {
@@ -134,9 +138,20 @@ a {
 	width: 1000px;
 	top: 700px;
 	left: -450px;
+	
+}
+
+.about.jqclickclose { 
+	height: 83px;
+	width: 54px;
+	top: 82px;
+	left: 0px;
+	-webkit-transition: height 2s, width 2s, top 2s, left 2s;
 }
 
 .about-close {
+	font-size: 200%;
+	text-align: center;
 	margin-top: 2%;
 }
 
@@ -304,6 +319,10 @@ span {
 }
 
 .about-viewer {
+	display: none;
+}
+
+.show-about-viewer {
 	height: 100vh;
 	width: 100%;
 }

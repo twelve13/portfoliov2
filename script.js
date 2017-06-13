@@ -8,10 +8,10 @@ var aboutButton = $(".about-button");
 
 // var aboutOuter = $(".about-outer");
 var about = $(".about");
-// var aboutClose = $(".about-close");
-// var aboutWrapper = $(".about-wrapper");
+var aboutClose = $(".about-close");
+var aboutWrapper = $(".about-wrapper");
 // var aboutListing = $(".about-listing");
-// var aboutViewer = $(".about-viewer");
+var aboutViewer = $(".about-viewer");
 
 // var projectsOuter = $(".projects-outer");
 // var projects = $(".projects");
@@ -211,10 +211,9 @@ var about = $(".about");
 var move = function() {
 			var x = 1;
 
-			console.log("tes");
 			var id = setInterval(scrolldown, 10);
 			function scrolldown() {
-				if(x > 2000){
+				if(x > 1800){
 				clearInterval(id);
 				} else {
 				window.scroll(0, x);
@@ -225,9 +224,28 @@ var move = function() {
 			}
 		}
 
+var moveup = function() {
+			var x = 1801;
+
+			var id = setInterval(scrollup, 10);
+			function scrollup() {
+				if(x<=0){
+				clearInterval(id);
+				} else {
+				window.scroll(0, x);
+				x = x - 10;
+				console.log("hi");
+				console.log(x);
+				}
+			}
+		}
+
 aboutButton.click(function(){
 	//if (aboutClicked === false){
+		about.removeClass("jqclickclose");
 		about.addClass("jqclick");
+		aboutWrapper.addClass("showme");
+		aboutViewer.addClass("show-about-viewer");
 		move();
 		// setInterval(function(){
 	
@@ -240,9 +258,13 @@ aboutButton.click(function(){
 	//}
 });
 
-// aboutClose.click(function(){
+aboutClose.click(function(){
+	about.removeClass("jqclick");
+	about.addClass("jqclickclose");
+	aboutWrapper.removeClass("showme");
+	moveup();
 // 	aboutShrink();
-// });
+});
 
 // projectsButton.click(function() {
 // 	if (projectsClicked === false){

@@ -11,12 +11,12 @@ var aboutWrapper = $(".about-wrapper");
 var aboutViewer = $(".about-viewer");
 
 // var projectsOuter = $(".projects-outer");
-// var projects = $(".projects");
-// var projectsClose = $(".projects-close");
-// var projectsWrapper = $(".projects-wrapper");
+var projects = $(".projects");
+var projectsClose = $(".projects-close");
+var projectsWrapper = $(".projects-wrapper");
 // var projectsNav = $(".projects-nav");
 // var projectListing = $("project-listing");
-// var projectsViewer = $(".projects-viewer");
+var projectsViewer = $(".projects-viewer");
 
 // var contactLink = $(".contact-link");
 // var email = $(".email");
@@ -35,7 +35,6 @@ var aboutViewer = $(".about-viewer");
 // var cache = $(".cache");
 // var cacheProject = $(".cache-project");
 
-// projectsWrapper.hide();
 //endangeredProject.hide();
 //simonProject.hide();
 //cacheProject.hide();
@@ -178,15 +177,22 @@ aboutClose.click(function(){
 	moveup();
 });
 
-// projectsButton.click(function() {
-// 	if (projectsClicked === false){
-// 		projectsExpand();
-// 	}
-// });
+projectsButton.click(function() {
+	projects.removeClass("jqclickclose2")
+	projects.addClass("jqclick2");
+	projectsWrapper.addClass("showme");
+	projectsViewer.addClass("show-projects-viewer");
+	projectsViewer.addClass("showme");
+	moveup();
+});
 
-// projectsClose.click(function(){
-// 	projectsShrink();
-// });
+projectsClose.click(function(){
+	projects.removeClass("jqclick2");
+	projects.addClass("jqclickclose2");
+	projectsWrapper.removeClass("showme");
+	movedown();
+	projectsViewer.removeClass("showme");
+});
 
 // contactButton.click(function(){
 // 	if (contactClicked === false){

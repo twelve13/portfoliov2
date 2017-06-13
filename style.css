@@ -3,6 +3,10 @@
 	margin: 0;
 }
 
+.projects-wrapper, .endangered-project, .simon-project, cache-project, .projects-viewer, .contact-link, .contact-close {
+	display: none;
+}
+
 a {
 	color: white;
 }
@@ -101,6 +105,8 @@ a {
 	position: relative;
 }
 
+
+
 .about-outer {
 	height: 300px;
 	position: relative;
@@ -115,10 +121,19 @@ a {
 	flex-wrap: wrap;
 	height: 83px;
 	justify-content: center;
+	left: 0px;
 	overflow: hidden;
 	position: absolute;
 	top: 82px;
 	width: 54px;
+	-webkit-transition: height 2s, width 2s, top 2s, left 2s;
+}
+
+.about.jqclick { 
+	height: 700px;
+	width: 1000px;
+	top: 700px;
+	left: -450px;
 }
 
 .about-close {

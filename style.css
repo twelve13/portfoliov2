@@ -281,9 +281,11 @@ span {
 }
 
 .project-listing {
+/*	background-color: yellow;*/
 	color: gray;
 	display: flex;
 	font-size: 200%;
+	width: 40%;
 }
 
 .project-listing:hover{

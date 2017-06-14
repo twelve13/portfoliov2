@@ -80,12 +80,6 @@ var cacheProject = $(".cache-project");
 
 // 	projectsWrapper.hide();
 // 	projectsViewer.hide(1500)
-// 	endangered.css("color", "gray");
-// 	simon.css("color", "gray");
-// 	cache.css("color", "gray");
-// 	endangeredProject.hide();
-// 	simonProject.hide();
-// 	cacheProject.hide();
 // 	projectsClicked = false;	
 // };
 
@@ -172,6 +166,8 @@ aboutClose.click(function(){
 });
 
 projectsButton.click(function() {
+	studii.addClass("white");
+	studiiProject.addClass("showflex");
 	projects.removeClass("jqclickclose2")
 	projects.addClass("jqclick2");
 	projectsWrapper.addClass("showme");
@@ -181,6 +177,12 @@ projectsButton.click(function() {
 });
 
 projectsClose.click(function(){
+	endangered.removeClass("white");
+	endangeredProject.removeClass("showflex");
+	simon.removeClass("white");
+	simonProject.removeClass("showflex");
+	cache.removeClass("white");
+	cacheProject.removeClass("showflex");
 	projects.removeClass("jqclick2");
 	projects.addClass("jqclickclose2");
 	projectsWrapper.removeClass("showme");

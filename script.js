@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 var aboutButton = $(".about-button");
 var projectsButton = $(".projects-button");
-// var contactButton = $(".contact-button");
+var contactButton = $(".contact-button");
 
 var about = $(".about");
 var aboutClose = $(".about-close");
@@ -14,16 +14,15 @@ var aboutViewer = $(".about-viewer");
 var projects = $(".projects");
 var projectsClose = $(".projects-close");
 var projectsWrapper = $(".projects-wrapper");
-// var projectsNav = $(".projects-nav");
-// var projectListing = $("project-listing");
 var projectsViewer = $(".projects-viewer");
 
-// var contactLink = $(".contact-link");
+var contactLink = $(".contact-link");
 // var email = $(".email");
 // var resume = $(".resume");
 // var linkedin = $(".linkedin");
 // var github = $(".github");
-// var contactClose = $(".contact-close");
+var contactItem = $(".contact-item");
+var contactClose = $(".contact-close");
 
 // var blurb = $(".blurb");
 var studii = $(".studii");
@@ -190,17 +189,6 @@ projectsClose.click(function(){
 	projectsViewer.removeClass("showme");
 });
 
-// contactButton.click(function(){
-// 	if (contactClicked === false){
-// 		contactExpand();
-// 	}
-// });
-
-// contactClose.click(function(){
-// 	if (contactClicked === true){
-// 	contactShrink();
-// 	}
-// });
 
 
 studii.on("click", function(){
@@ -247,5 +235,19 @@ cache.on("click", function(){
 	cacheProject.addClass("showflex");
 });
 
+
+contactButton.click(function(){
+	contactItem.removeClass("jqclickclose3");
+	contactItem.addClass("jqclick3");
+	contactLink.addClass("showme");
+	contactClose.addClass("showme");
+});
+
+contactClose.click(function(){
+	contactItem .addClass("jqclickclose3");
+	contactItem.removeClass("jqclick3");
+	contactLink.removeClass("showme");
+	contactClose.removeClass("showme");
+});
 
 })

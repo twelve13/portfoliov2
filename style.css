@@ -75,6 +75,69 @@ a {
 	position: absolute;
 	top: 50px;
 	width: 400px;
+	-moz-transition: top 2s;
+	-o-transition: top 2s;
+	-webkit-transition: top 2s;
+	transition: top 2s;
+}
+
+.contact-item {
+	box-sizing: border-box;
+	display: flex;
+	height: 50px;
+	left: 13px;
+/*	padding: 15px 50px;*/
+	position: absolute;
+	top: 50px;
+	width: 400px;
+	-moz-transition: top 1.5s;
+	-o-transition: top 1.5s;
+	-webkit-transition: top 1.5s;
+	transition: top 1.5s;
+}
+
+/*.contact-item .jqclick3 {
+	top: -30vh;
+}*/
+
+.email.jqclick3 {
+/*	background-color: red;*/
+	top: -30vh;
+}
+
+.resume.jqclick3 {
+/*	background-color: orange;*/
+	top: -22vh;
+}
+
+.linkedin.jqclick3 {
+/*	background-color: yellow;*/
+	top: -14vh;
+}
+
+.github.jqclick3 {
+/*	background-color: limegreen;*/
+	top: -6vh;
+}
+
+.email.jqclickclose3 {
+/*	background-color: red;*/
+	top: 50px;
+}
+
+.resume.jqclickclose3 {
+/*	background-color: orange;*/
+	top: 50px;
+}
+
+.linkedin .jqclickclose3 {
+/*	background-color: yellow;*/
+	top: 50px;
+}
+
+.github .jqclickclose3 {
+/*	background-color: limegreen;*/
+	top: 50px;
 }
 
 .bulletpoint {

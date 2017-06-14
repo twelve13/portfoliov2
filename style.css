@@ -7,18 +7,9 @@
 	display: none;
 }
 
-
-
-
-
 a {
 	color: white;
 }
-
-/*.projects-viewer {
-	height: 100vh;
-	width: 100%;
-}*/
 
 .main {
 /*	background-color: red;*/
@@ -31,7 +22,7 @@ a {
 }
 
 .nav-and-contact-viewer {
-	/*background-color: yellow;*/
+/*	background-color: yellow;*/
 	display: flex;
 	height: 35vh;
 	width: 100%;
@@ -61,103 +52,6 @@ a {
 	width: 200px;
 }
 
-.contact-viewer {
-/*	background-color: orange;*/
-	width: 45%;
-}
-
-.contact-item {
-	box-sizing: border-box;
-	display: flex;
-	height: 50px;
-	left: 13px;
-/*	padding: 15px 50px;*/
-	position: absolute;
-	top: 50px;
-	width: 400px;
-	-moz-transition: top 2s;
-	-o-transition: top 2s;
-	-webkit-transition: top 2s;
-	transition: top 2s;
-}
-
-.contact-item {
-	box-sizing: border-box;
-	display: flex;
-	height: 50px;
-	left: 13px;
-/*	padding: 15px 50px;*/
-	position: absolute;
-	top: 50px;
-	width: 400px;
-	-moz-transition: top 1.5s;
-	-o-transition: top 1.5s;
-	-webkit-transition: top 1.5s;
-	transition: top 1.5s;
-}
-
-/*.contact-item .jqclick3 {
-	top: -30vh;
-}*/
-
-.email.jqclick3 {
-/*	background-color: red;*/
-	top: -30vh;
-}
-
-.resume.jqclick3 {
-/*	background-color: orange;*/
-	top: -22vh;
-}
-
-.linkedin.jqclick3 {
-/*	background-color: yellow;*/
-	top: -14vh;
-}
-
-.github.jqclick3 {
-/*	background-color: limegreen;*/
-	top: -6vh;
-}
-
-.email.jqclickclose3 {
-/*	background-color: red;*/
-	top: 50px;
-}
-
-.resume.jqclickclose3 {
-/*	background-color: orange;*/
-	top: 50px;
-}
-
-.linkedin .jqclickclose3 {
-/*	background-color: yellow;*/
-	top: 50px;
-}
-
-.github .jqclickclose3 {
-/*	background-color: limegreen;*/
-	top: 50px;
-}
-
-.bulletpoint {
-	background-color: black;
-	border-radius: 12px;
-	height: 35px;
-	width: 35px;
-}
-
-.contact-link {
-	font-family: 'Permanent Marker', cursive;
-	font-size: 150%;
-	padding-left: 5%;
-	/*width: 100%;*/
-}
-
-.contact-link a {
-	color: black;
-}
-
 .name {
 /*	background-color: orange;*/
 	display: flex;
@@ -173,7 +67,23 @@ a {
 	position: relative;
 }
 
+.title-wrapper {
+	display: flex;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 300%;
+	height: 25vh;
+	justify-content: flex-end;
+	width: 80%;
+}
 
+.about-viewer {
+	display: none;
+}
+
+.show-about-viewer {
+	height: 100vh;
+	width: 100%;
+}
 
 .about-outer {
 	height: 300px;
@@ -206,7 +116,6 @@ a {
 	width: 750%;
 	top: 75vh;
 	left: -325%;
-	
 }
 
 .about.jqclickclose { 
@@ -258,50 +167,16 @@ span {
 	margin: 2% 0;
 }
 
-/*.experience {
-	align-items: flex-end;
-	display: flex;
-	flex-wrap: wrap;
-	font-family: arial;
-	height: 150px;
-	justify-content: center;
-	margin-top: 1%;
+
+.projects-viewer {
+	display: none;
 }
 
-.arts, .travel, .developer, .forensics, .improv {
-	border-left: solid transparent 60px;
-	border-right: solid transparent 60px;
-	height: 0px;
-	width: 0px;
+.show-projects-viewer {
+	display: block;
+	height: 100vh;
+	width: 100%;
 }
-
-.arts {
-	border-bottom: solid #857a83 60px;
-}
-
-.travel {
-	border-bottom: solid #5EBEB3 60px;
-}
-
-.developer {
-	border-bottom: solid #6EE4D3 60px;
-}
-
-.forensics {
-	border-bottom: solid #B9F2D2 60px;
-}
-
-.improv {
-	border-bottom: solid #F1E7DE 60px;
-}
-
-.experience p {
-	bottom: 100px;
-	color: #3b3b3b;
-	font-weight: bold;
-	position: relative;
-	text-align: center;
-}*/
 
 .projects-outer {
 	height: 300px;
@@ -401,6 +276,11 @@ span {
 	display: none;
 }
 
+/*.projects-viewer {
+	height: 100vh;
+	width: 100%;
+}*/
+
 .contact-outer {
 	/*background-color: gray;*/
 	height: 300px;
@@ -418,38 +298,95 @@ span {
 }
 
 .contact-close {
-	left: 42.5%;
-	position: absolute;
-	top: 25%;
+	left: 13px;
+/*	transform: rotate(90deg);
+	transform-origin: right bottom 0;*/
+	position: relative;
+	/*text-align: right;*/
+	text-decoration: underline;
+/*	top: 25%;*/
 }
 
-.title-wrapper {
+
+.contact-viewer {
+	background-color: orange;
 	display: flex;
+	align-items: center;
+	width: 45%;
+}
+
+.contact-item {
+	box-sizing: border-box;
+	display: flex;
+	height: 50px;
+	left: 13px;
+/*	padding: 15px 50px;*/
+	position: absolute;
+	top: 50px;
+	width: 400px;
+	-moz-transition: top 1.5s;
+	-o-transition: top 1.5s;
+	-webkit-transition: top 1.5s;
+	transition: top 1.5s;
+}
+
+.email.jqclick3 {
+/*	background-color: red;*/
+	top: -30vh;
+}
+
+.resume.jqclick3 {
+/*	background-color: orange;*/
+	top: -22vh;
+}
+
+.linkedin.jqclick3 {
+/*	background-color: yellow;*/
+	top: -14vh;
+}
+
+.github.jqclick3 {
+/*	background-color: limegreen;*/
+	top: -6vh;
+}
+
+.email.jqclickclose3 {
+/*	background-color: red;*/
+	top: 50px;
+}
+
+.resume.jqclickclose3 {
+/*	background-color: orange;*/
+	top: 50px;
+}
+
+.linkedin .jqclickclose3 {
+/*	background-color: yellow;*/
+	top: 50px;
+}
+
+.github .jqclickclose3 {
+/*	background-color: limegreen;*/
+	top: 50px;
+}
+
+
+.bulletpoint {
+	background-color: black;
+	border-radius: 12px;
+	height: 35px;
+	width: 35px;
+}
+
+.contact-link {
 	font-family: 'Permanent Marker', cursive;
-	font-size: 300%;
-	height: 25vh;
-	justify-content: flex-end;
-	width: 80%;
+	font-size: 150%;
+	padding-left: 5%;
+	/*width: 100%;*/
 }
 
-.about-viewer {
-	display: none;
-}
-
-.show-about-viewer {
-
-	height: 100vh;
-	width: 100%;
-}
-
-.projects-viewer {
-	display: none;
-}
-
-.show-projects-viewer {
-	display: block;
-	height: 100vh;
-	width: 100%;
+.contact-link a {
+	color: black;
 }
 
 .showme {

@@ -239,15 +239,17 @@ cache.on("click", function(){
 contactButton.click(function(){
 	contactItem.removeClass("jqclickclose3");
 	contactItem.addClass("jqclick3");
-	contactLink.addClass("showme");
+	contactLink.removeClass("hide-link");
+	contactLink.addClass("show-link");
 	contactClose.addClass("showme");
 });
 
 contactClose.click(function(){
 	contactItem .addClass("jqclickclose3");
 	contactItem.removeClass("jqclick3");
-	contactLink.removeClass("showme");
+	contactLink.removeClass("show-link");
+	contactLink.addClass("hide-link");
 	contactClose.removeClass("showme");
 });
 
-})
+});

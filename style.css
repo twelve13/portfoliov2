@@ -3,7 +3,7 @@
 	margin: 0;
 }
 
-.about-wrapper, .projects-wrapper, .endangered-project, .simon-project, cache-project, .contact-link, .contact-close {
+.about-wrapper, .projects-wrapper, .endangered-project, .simon-project, cache-project, .contact-close {
 	display: none;
 }
 
@@ -123,10 +123,10 @@ a {
 	width: 54px;
 	top: 82px;
 	left: 0px;
-	-moz-transition: height 1.5s, width 1.5s, top 1.5s, left 1.5s;
+/*	-moz-transition: height 1.5s, width 1.5s, top 1.5s, left 1.5s;
 	-o-transition: height 1.5s, width 1.5s, top 1.5s, left 1.5s;
 	-webkit-transition: height 1.5s, width 1.5s, top 1.5s, left 1.5s;
-	transition: height 1.5s, width 1.5s, top 1.5s, left 1.5s;
+	transition: height 1.5s, width 1.5s, top 1.5s, left 1.5s;*/
 }
 
 .about-close {
@@ -193,7 +193,7 @@ span {
 	position: relative;
 	top: 40px;
 	width: 32px;
-	-webkit-transition: height 3s, width 3s, top 3s, left 3s;
+	-webkit-transition: height 2s, width 2s, top 2s, left 2s;
 }
 
 .projects.jqclick2 { 
@@ -209,7 +209,7 @@ span {
 	width: 32px;
 	top: 40px;
 	left: 0px;
-	-webkit-transition: height 2s, width 2s, top 2s, left 2s;
+/*	-webkit-transition: height 2s, width 2s, top 2s, left 2s;*/
 }
 
 .projects-close {
@@ -227,11 +227,7 @@ span {
 }
 
 .project-listing:hover{
-	font-size: 210%;
-}
-
-.project-listing:visited{
-	color: red;
+	color: white;
 }
 
 .project-info {
@@ -305,6 +301,7 @@ span {
 }
 
 .contact-item {
+/*	background-color: limegreen;*/
 	box-sizing: border-box;
 	display: flex;
 	height: 50px;
@@ -312,7 +309,7 @@ span {
 /*	padding: 15px 50px;*/
 	position: absolute;
 	top: 50px;
-	width: 400px;
+	width: 800%;
 	-moz-transition: top 1.5s;
 	-o-transition: top 1.5s;
 	-webkit-transition: top 1.5s;
@@ -342,21 +339,37 @@ span {
 .email.jqclickclose3 {
 /*	background-color: red;*/
 	top: 50px;
+/*		-moz-transition: top 2s;
+	-o-transition: top 2s;
+	-webkit-transition: top 2s;
+	transition: top 2s;*/
 }
 
 .resume.jqclickclose3 {
 /*	background-color: orange;*/
 	top: 50px;
+/*		-moz-transition: top 2s;
+	-o-transition: top 2s;
+	-webkit-transition: top 2s;
+	transition: top 2s;*/
 }
 
 .linkedin .jqclickclose3 {
 /*	background-color: yellow;*/
 	top: 50px;
+/*		-moz-transition: top 2s;
+	-o-transition: top 2s;
+	-webkit-transition: top 2s;
+	transition: top 2s;*/
 }
 
 .github .jqclickclose3 {
 /*	background-color: limegreen;*/
 	top: 50px;
+/*		-moz-transition: top 2s;
+	-o-transition: top 2s;
+	-webkit-transition: top 2s;
+	transition: top 2s;*/
 }
 
 
@@ -368,11 +381,36 @@ span {
 }
 
 .contact-link {
+	/*background-color: purple;*/
 	font-family: 'Permanent Marker', cursive;
 	font-size: 150%;
 	padding-left: 5%;
-	/*width: 100%;*/
+	overflow: hidden;
+	width: 0%;
+	-moz-transition: width 0.5s;
+	-o-transition: width 0.5s;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+	-webkit-transition-delay: 1s;
+	transition-delay: 1s;
 }
+
+.contact-link.show-link {
+	width: 80%;
+}
+
+.contact-link.hide-link{
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+/*.contact-link.hide-link{
+	width: 0%;
+	-moz-transition: width 0.5s;
+	-o-transition: width 0.5s;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+}*/
 
 .contact-link a {
 	color: black;

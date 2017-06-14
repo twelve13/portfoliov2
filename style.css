@@ -387,10 +387,10 @@ span {
 	padding-left: 5%;
 	overflow: hidden;
 	width: 0%;
-	-moz-transition: width 0.5s;
-	-o-transition: width 0.5s;
-	-webkit-transition: width 0.5s;
-	transition: width 0.5s;
+	-moz-transition: width 1s;
+	-o-transition: width 1s;
+	-webkit-transition: width 1s;
+	transition: width 1s;
 	-webkit-transition-delay: 1s;
 	transition-delay: 1s;
 }

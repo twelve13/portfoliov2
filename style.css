@@ -324,6 +324,11 @@ span {
 	padding-top: 5%;
 }
 
+.project-image {
+	border-radius: 5%;
+	overflow: hidden;
+}
+
 .blurb {
 	color: white;
 	font-size: 200%;

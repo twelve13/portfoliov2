@@ -9,9 +9,7 @@
 
 
 
-.showme {
-	display: block;
-}
+
 
 a {
 	color: white;
@@ -197,7 +195,7 @@ span {
 	margin: 2% 0;
 }
 
-.experience {
+/*.experience {
 	align-items: flex-end;
 	display: flex;
 	flex-wrap: wrap;
@@ -240,7 +238,7 @@ span {
 	font-weight: bold;
 	position: relative;
 	text-align: center;
-}
+}*/
 
 .projects-outer {
 	height: 300px;
@@ -282,10 +280,18 @@ span {
 	text-align: right;
 }
 
-.projects-nav * {
+.project-listing {
 	color: gray;
 	display: flex;
 	font-size: 200%;
+}
+
+.project-listing:hover{
+	font-size: 210%;
+}
+
+.project-listing:visited{
+	color: red;
 }
 
 .project-info {
@@ -321,9 +327,8 @@ span {
 	font-size: 200%;
 }
 
-.endangered-project, .simon-project, .cache-project {
+.studii-project, .endangered-project, .simon-project, .cache-project {
 	display: none;
-	color: red;
 }
 
 .contact-outer {
@@ -375,6 +380,18 @@ span {
 	display: block;
 	height: 100vh;
 	width: 100%;
+}
+
+.showme {
+	display: block;
+}
+
+.showflex {
+	display: flex;
+}
+
+.white{
+	color: white;
 }
 
 @media (max-width: 768px) {

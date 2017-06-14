@@ -26,21 +26,14 @@ var projectsViewer = $(".projects-viewer");
 // var contactClose = $(".contact-close");
 
 // var blurb = $(".blurb");
-// var studii = $(".studii");
-// var studiiProject = $(".studii-project");
-// var endangered = $(".endangered");
-// var endangeredProject = $(".endangered-project");
-// var simon = $(".simon");
-// var simonProject = $(".simon-project");
-// var cache = $(".cache");
-// var cacheProject = $(".cache-project");
-
-//endangeredProject.hide();
-//simonProject.hide();
-//cacheProject.hide();
-//projectsViewer.hide();
-// contactLink.hide();
-// contactClose.hide();
+var studii = $(".studii");
+var studiiProject = $(".studii-project");
+var endangered = $(".endangered");
+var endangeredProject = $(".endangered-project");
+var simon = $(".simon");
+var simonProject = $(".simon-project");
+var cache = $(".cache");
+var cacheProject = $(".cache-project");
 
 
 // var projectsExpand = function() {
@@ -208,48 +201,49 @@ projectsClose.click(function(){
 // });
 
 
-// studii.on("click", function(){
-// 	studii.css("color", "white");
-// 	endangered.css("color", "gray");
-// 	simon.css("color", "gray");
-// 	cache.css("color", "gray");
-// 	endangeredProject.hide();
-// 	simonProject.hide();
-// 	studiiProject.show();
-// 	cacheProject.hide();
-// });
+studii.on("click", function(){
+	studii.addClass("white");
+	endangered.removeClass("white");
+	simon.removeClass("white");
+	cache.removeClass("white");
+	studiiProject.addClass("showflex");
+	endangeredProject.removeClass("showflex");
+	simonProject.removeClass("showflex");
+	cacheProject.removeClass("showflex");
+});
 
-// endangered.on("click", function(){
-// 	endangered.css("color", "white");
-// 	studii.css("color", "gray");
-// 	simon.css("color", "gray");
-// 	cache.css("color", "gray");
-// 	studiiProject.hide();
-// 	simonProject.hide();
-// 	endangeredProject.show();
-// 	cacheProject.hide();
-// })
+endangered.on("click", function(){
+	studii.removeClass("white");
+	endangered.addClass("white");
+	simon.removeClass("white");
+	cache.removeClass("white");
+	studiiProject.removeClass("showflex");
+	endangeredProject.addClass("showflex");
+	simonProject.removeClass("showflex");
+	cacheProject.removeClass("showflex");
+});
 
-// simon.on("click", function(){
-// 	simon.css("color", "white");
-// 	studii.css("color", "gray");
-// 	endangered.css("color", "gray");
-// 	cache.css("color", "gray");
-// 	studiiProject.hide();
-// 	endangeredProject.hide();
-// 	simonProject.show();
-// 	cacheProject.hide();
-// })
+simon.on("click", function(){
+	studii.removeClass("white");
+	endangered.removeClass("white");
+	simon.addClass("white");
+	cache.removeClass("white");
+	studiiProject.removeClass("showflex");
+	endangeredProject.removeClass("showflex");
+	simonProject.addClass("showflex");
+	cacheProject.removeClass("showflex");
+});
 
-// cache.on("click", function(){
-// 	cache.css("color", "white");
-// 	studii.css("color", "gray");
-// 	endangered.css("color", "gray");
-// 	simon.css("color", "gray")
-// 	studiiProject.hide();
-// 	endangeredProject.hide();
-// 	simonProject.hide();
-// 	cacheProject.show();
-// })
+cache.on("click", function(){
+	studii.removeClass("white");
+	endangered.removeClass("white");
+	simon.removeClass("white");
+	cache.addClass("white");
+	studiiProject.removeClass("showflex");
+	endangeredProject.removeClass("showflex");
+	simonProject.removeClass("showflex");
+	cacheProject.addClass("showflex");
+});
+
 
 })

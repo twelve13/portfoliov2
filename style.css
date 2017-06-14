@@ -23,6 +23,7 @@ a {
 }*/
 
 .main {
+/*	background-color: red;*/
 	align-content: flex-start;
 	display: flex;
 	flex-wrap: wrap;
@@ -128,17 +129,18 @@ a {
 	height: 83px;
 	justify-content: center;
 	left: 0px;
+	margin-bottom: 10vh;
 	overflow: hidden;
 	position: absolute;
 	top: 82px;
 	width: 54px;
-	-webkit-transition: height 2s, width 2s, top 2s, left 2s;
+	-webkit-transition: height 1.5s, width 1.5s, top 1s, left 1.5s;
 }
 
 .about.jqclick { 
-	height: 700px;
+	height: 80vh;
 	width: 1000px;
-	top: 700px;
+	top: 75vh;
 	left: -450px;
 	
 }
@@ -148,11 +150,12 @@ a {
 	width: 54px;
 	top: 82px;
 	left: 0px;
-	-webkit-transition: height 2s, width 2s, top 2s, left 2s;
+	-webkit-transition: height 1.5s, width 1.5s, top 1.5s, left 1.5s;
 }
 
 .about-close {
-	font-size: 200%;
+	font-size: 125%;
+	text-decoration: underline;
 	text-align: center;
 	margin-top: 2%;
 }
@@ -167,12 +170,14 @@ span {
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
+
 }
+
 .about-listing {
 /*	background-color: purple;*/
 	box-sizing: border-box;
 	font-family: viga;
-/*	font-size: 130%;*/
+	font-size: 150%;
 	padding-top: 2%;
 	text-align: center;
 	width: 90%;
@@ -181,6 +186,7 @@ span {
 .full-name {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 300%;
+	margin: 2% 0;
 }
 
 .experience {
@@ -348,6 +354,7 @@ span {
 }
 
 .show-about-viewer {
+
 	height: 100vh;
 	width: 100%;
 }

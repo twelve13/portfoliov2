@@ -139,17 +139,18 @@ var movedown = function() {
 	var id = setInterval(scrolldown, 10);
 
 	function scrolldown() {
-		if(x > 1800){
+		if(x > 1350){
 			clearInterval(id);
 		} else {
 			window.scroll(0, x);
 			x = x + 10;
+			console.log(x)
 		}
 	}
 }
 
 var moveup = function() {
-	var x = 1801;
+	var x = 1351;
 	var id = setInterval(scrollup, 10);
 	
 	function scrollup() {
@@ -182,7 +183,7 @@ projectsButton.click(function() {
 	projects.addClass("jqclick2");
 	projectsWrapper.addClass("showme");
 	projectsViewer.addClass("show-projects-viewer");
-	projectsViewer.addClass("showme");
+	// projectsViewer.addClass("showme");
 	moveup();
 });
 

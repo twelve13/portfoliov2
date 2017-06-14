@@ -128,7 +128,7 @@ const movedown = function() {
 	var id = setInterval(scrolldown, 10);
 
 	function scrolldown() {
-		if(y > 2*height){
+		if(y > 2.4*height){
 			clearInterval(id);
 		} else {
 			window.scroll(0, y);

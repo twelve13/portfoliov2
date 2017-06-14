@@ -134,14 +134,17 @@ a {
 	position: absolute;
 	top: 82px;
 	width: 54px;
+	-moz-transition: height 1.5s, width 1.5s, top 1s, left 1.5s;
+	-o-transition: height 1.5s, width 1.5s, top 1s, left 1.5s;
 	-webkit-transition: height 1.5s, width 1.5s, top 1s, left 1.5s;
+	transition: height 1.5s, width 1.5s, top 1s, left 1.5s;
 }
 
 .about.jqclick { 
 	height: 80vh;
-	width: 1000px;
+	width: 750%;
 	top: 75vh;
-	left: -450px;
+	left: -325%;
 	
 }
 
@@ -150,14 +153,19 @@ a {
 	width: 54px;
 	top: 82px;
 	left: 0px;
+	-moz-transition: height 1.5s, width 1.5s, top 1.5s, left 1.5s;
+	-o-transition: height 1.5s, width 1.5s, top 1.5s, left 1.5s;
 	-webkit-transition: height 1.5s, width 1.5s, top 1.5s, left 1.5s;
+	transition: height 1.5s, width 1.5s, top 1.5s, left 1.5s;
 }
 
 .about-close {
+/*	background-color: red;*/
 	font-size: 125%;
+	height: 20px;
 	text-decoration: underline;
 	text-align: center;
-	margin-top: 2%;
+	margin-top: 1%;
 }
 
 span {
@@ -368,3 +376,7 @@ span {
 	height: 100vh;
 	width: 100%;
 }
+
+@media (max-width: 768px) {
+
+	}

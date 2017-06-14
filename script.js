@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
 
+var width = $(window).width();
+var height = $(window).height();
+
 var aboutButton = $(".about-button");
 var projectsButton = $(".projects-button");
 var contactButton = $(".contact-button");
@@ -120,31 +123,62 @@ var cacheProject = $(".cache-project");
 // 		contactClicked = false;
 // };
 
-var movedown = function() {
-	var x = 1;
+const movedown = function() {
+	var y = height;
 	var id = setInterval(scrolldown, 10);
 
 	function scrolldown() {
-		if(x > 1350){
+		if(y > 2*height){
+			clearInterval(id);
+		} else {
+			window.scroll(0, y);
+			y = y + 10;
+			console.log("this is y", y);
+		}
+	}
+}
+
+const moveup = function() {
+	var y = height;
+	var id = setInterval(scrollup, 10);
+	
+	function scrollup() {
+		if(y<=height){
+			clearInterval(id);
+		} else {
+			window.scroll(0, y);
+			y = y - 10;
+			console.log(y);
+		}
+	}
+}
+
+// const moveup2 = function() {
+// 	var y = height;
+// 	var id = setInterval(scrollup, 10);
+	
+// 	function scrollup() {
+// 		if(y > 2*height){
+// 			clearInterval(id);
+// 		} else {
+// 			window.scroll(0, y);
+// 			y = y - 10;
+// 			console.log(y);
+// 		}
+// 	}
+// }
+
+const movedown2 = function() {
+	var x = height;
+	var id = setInterval(scrolldown, 10);
+
+	function scrolldown() {
+		if(x<=.5*height){
 			clearInterval(id);
 		} else {
 			window.scroll(0, x);
 			x = x + 10;
 			console.log(x)
-		}
-	}
-}
-
-var moveup = function() {
-	var x = 1351;
-	var id = setInterval(scrollup, 10);
-	
-	function scrollup() {
-		if(x<=0){
-			clearInterval(id);
-		} else {
-			window.scroll(0, x);
-			x = x - 10;
 		}
 	}
 }
@@ -170,8 +204,9 @@ projectsButton.click(function() {
 	projects.removeClass("jqclickclose2")
 	projects.addClass("jqclick2");
 	projectsWrapper.addClass("showme");
-	projectsViewer.addClass("show-projects-viewer");
 	// projectsViewer.addClass("showme");
+	projectsViewer.addClass("showprojects")
+
 	moveup();
 });
 
@@ -185,8 +220,9 @@ projectsClose.click(function(){
 	projects.removeClass("jqclick2");
 	projects.addClass("jqclickclose2");
 	projectsWrapper.removeClass("showme");
-	movedown();
-	projectsViewer.removeClass("showme");
+	// movedown();
+	projectsViewer.removeClass("showprojects")
+	// projectsViewer.removeClass("showme");
 });
 
 

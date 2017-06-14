@@ -18,6 +18,7 @@ a {
 	flex-wrap: wrap;
 	height: 100vh;
 	justify-content: center;
+/*	position: relative;*/
 	width: 100%;
 }
 
@@ -169,14 +170,30 @@ span {
 
 
 .projects-viewer {
-	display: none;
+	
+	height: 0vh;
+	transition: height 1s;
 }
 
+.projects-viewer.showprojects{
+	height: 100vh;
+	background-color: red;
+	width: 100%;
+
+}
+/*
 .show-projects-viewer {
+	background-color: red;
 	display: block;
 	height: 100vh;
 	width: 100%;
-}
+}*/
+
+/*.projects-viewer {
+	background-color: red;
+	height: 100vh;
+	width: 100%;
+}*/
 
 .projects-outer {
 	height: 300px;
@@ -193,7 +210,7 @@ span {
 	position: relative;
 	top: 40px;
 	width: 32px;
-	-webkit-transition: height 2s, width 2s, top 2s, left 2s;
+	-webkit-transition: height 1s, width 1s, top 1s, left 1s;
 }
 
 .projects.jqclick2 { 
@@ -272,10 +289,7 @@ span {
 	display: none;
 }
 
-/*.projects-viewer {
-	height: 100vh;
-	width: 100%;
-}*/
+
 
 .contact-outer {
 	/*background-color: gray;*/
@@ -306,14 +320,13 @@ span {
 	display: flex;
 	height: 50px;
 	left: 13px;
-/*	padding: 15px 50px;*/
 	position: absolute;
 	top: 50px;
 	width: 800%;
-	-moz-transition: top 1.5s;
-	-o-transition: top 1.5s;
-	-webkit-transition: top 1.5s;
-	transition: top 1.5s;
+	-moz-transition: top 1s;
+	-o-transition: top 1s;
+	-webkit-transition: top 1s;
+	transition: top 1s;
 }
 
 .email.jqclick3 {

@@ -38,7 +38,7 @@ a {
 	width: 55%;
 }
 
-.nav div {
+.about-button, .projects-button, .contact-button {
 	align-items: center;
 	background-color: black;
 	box-sizing: border-box;
@@ -297,19 +297,8 @@ span {
 	width: 32px;
 }
 
-.contact-close {
-	left: 13px;
-/*	transform: rotate(90deg);
-	transform-origin: right bottom 0;*/
-	position: relative;
-	/*text-align: right;*/
-	text-decoration: underline;
-/*	top: 25%;*/
-}
-
-
 .contact-viewer {
-	background-color: orange;
+	/*background-color: orange;*/
 	display: flex;
 	align-items: center;
 	width: 45%;

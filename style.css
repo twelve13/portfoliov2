@@ -435,10 +435,10 @@ span {
 		top: 52px;
 	}
  	.about.about-expand { 
- 		height: 80vh;
+ 		height: 70vh;
  		left: -300%;
  		top: 60vh;
- 		width: 800%;
+ 		width: 750%;
  	}
  	.about.about-shrink { 
 	height: 60px;

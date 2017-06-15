@@ -441,7 +441,7 @@ span {
 	}
  	.about.about-expand { 
  		height: 70vh;
- 		left: -310%;
+ 		left: -350%;
  		top: 70vh;
  		width: 900%;
  	}
@@ -466,10 +466,10 @@ span {
 	width: 24px;
 }
 .projects.projects-expand { 
-	height: 80vh;
+	height: 75vh;
 	left: -1000%;
 	top: -130vh;
-	width: 1800%;
+	width: 1700%;
 }
 
 .projects.projects-shrink { 
@@ -480,6 +480,10 @@ span {
 
 .project-listing, .blurb {
 	font-size: 150%;
+}
+
+.title-wrapper {
+	font-size: 200%;
 }
 
  }

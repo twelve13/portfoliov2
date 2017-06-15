@@ -428,6 +428,11 @@ span {
 	.name-letter {
 	font-size: 1000%;
 	}
+
+	.about-outer {
+	width: 80px;
+}
+
 	.about {
 		height: 60px;
 		width: 32px;
@@ -450,11 +455,27 @@ span {
 
 	font-size: 110%;
 	}
-	.name {
-	display: flex;
-/*	font-family: 'Viga', sans-serif;
-	height: 40vh;*/
-	/*justify-content: flex-start;*/
-	/*width: 100%;*/
+
+.projects-outer {
+	width: 50px;
 }
+
+.projects {
+	height: 130px;
+	top: 25px;
+	width: 24px;
+}
+.projects.projects-expand { 
+	height: 80vh;
+	left: -1000%;
+	top: -130vh;
+	width: 1600%;
+}
+
+.projects.projects-shrink { 
+	height: 130px;
+	top: 25px;
+	width: 24px;
+}
+
  }

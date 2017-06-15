@@ -203,6 +203,9 @@ span {
 	width: 32px;
 }
 
+.projects-nav {
+	padding-left: 5%;
+}
 .projects-close {
 	color: white;
 	padding: 2% 2% 0 0;
@@ -222,17 +225,14 @@ span {
 
 .project-info {
 	display: flex;
+	height: 75%;
 }
 
-.image-and-links, .blurb {
+.project-image, .description {
 	box-sizing: border-box;
-	height: 50%;
+	height: 100%;
 	padding: 5%;
 	width: 50%;
-}
-
-.studii, {
-	color: white;
 }
 
 .project-image img {
@@ -240,22 +240,33 @@ span {
 	width: 100%;
 }
 
-.project-links {
-	color: white;
+.description {
+	align-content: space-around;
 	display: flex;
-	font-size: 150%;
-	justify-content: space-around;
-	padding-top: 5%;
-}
-
-.project-image {
-	border-radius: 5%;
-	overflow: hidden;
+	flex-wrap: wrap;
+	height: 500px;
 }
 
 .blurb {
 	color: white;
 	font-size: 200%;
+}
+
+.project-links {
+	color: white;
+/*	display: flex;*/
+	font-size: 150%;
+	/*justify-content: space-around;*/
+	padding-top: 5%;
+	width: 100%;
+}
+
+.project-links p {
+	padding: 1% 0;
+}
+
+.studii, {
+	color: white;
 }
 
 .studii-project, .endangered-project, .simon-project, .cache-project {

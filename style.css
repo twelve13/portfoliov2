@@ -209,7 +209,11 @@ span {
 .projects-close {
 	color: white;
 	padding: 2% 2% 0 0;
+	position: relative;
+	left: 85%;
 	text-align: right;
+	text-decoration: underline;
+	width: 10%;
 }
 
 .project-listing {

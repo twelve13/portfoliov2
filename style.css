@@ -469,13 +469,17 @@ span {
 	height: 80vh;
 	left: -1000%;
 	top: -130vh;
-	width: 1600%;
+	width: 1700%;
 }
 
 .projects.projects-shrink { 
 	height: 130px;
 	top: 25px;
 	width: 24px;
+}
+
+.project-listing, .blurb {
+	font-size: 150%;
 }
 
  }

@@ -436,8 +436,8 @@ span {
 	}
  	.about.about-expand { 
  		height: 70vh;
- 		left: -300%;
- 		top: 60vh;
+ 		left: -310%;
+ 		top: 70vh;
  		width: 750%;
  	}
  	.about.about-shrink { 

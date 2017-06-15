@@ -442,7 +442,7 @@ span {
  	.about.about-expand { 
  		height: 70vh;
  		left: -400%;
- 		top: 60vh;
+ 		top: 70vh;
  		width: 900%;
  	}
  	.about.about-shrink { 
@@ -466,10 +466,10 @@ span {
 	width: 24px;
 }
 .projects.projects-expand { 
-	height: 70vh;
+	height: 80vh;
 	left: -1000%;
 	top: -130vh;
-	width: 1650%;
+	width: 1700%;
 }
 
 .projects.projects-shrink { 

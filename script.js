@@ -149,7 +149,6 @@ contactButton.click(function(){
 	contactItem.addClass("contact-expand");
 	contactLink.removeClass("hide-link");
 	contactLink.addClass("show-link");
-	contactClose.addClass("showme");
 });
 
 contactClose.click(function(){
@@ -157,7 +156,6 @@ contactClose.click(function(){
 	contactItem.removeClass("contact-close");
 	contactLink.removeClass("show-link");
 	contactLink.addClass("hide-link");
-	contactClose.removeClass("showme");
 });
 
 });

@@ -3,7 +3,7 @@
 	padding: 0;	
 }
 
-.about-wrapper, .projects-wrapper, .endangered-project, .simon-project, cache-project, .contact-close {
+.about-wrapper, .projects-wrapper, .endangered-project, .simon-project, cache-project {
 	display: none;
 }
 
@@ -378,6 +378,12 @@ span {
 
 .contact-link a {
 	color: black;
+}
+
+.contact-close {
+	font-size: 10px;
+	margin: 10px 5px;
+	text-decoration: underline;
 }
 
 .showme {

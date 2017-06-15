@@ -435,9 +435,9 @@ span {
 		top: 52px;
 	}
  	.about.about-expand { 
- 		height: 65vh;
- 		width: 600%;
- 		left: -300%;
+ 		height: 80vh;
+ 		width: 700%;
+ 		left: -400%;
  	}
  	.about.about-shrink { 
 	height: 60px;

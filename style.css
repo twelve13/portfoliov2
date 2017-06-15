@@ -232,7 +232,7 @@ span {
 	height: 75%;
 }
 
-.project-image, .description {
+.image-and-links, .blurb {
 	box-sizing: border-box;
 	height: 100%;
 	padding: 5%;
@@ -258,9 +258,9 @@ span {
 
 .project-links {
 	color: white;
-/*	display: flex;*/
+	display: flex;
 	font-size: 150%;
-	/*justify-content: space-around;*/
+	justify-content: space-around;
 	padding-top: 5%;
 	width: 100%;
 }

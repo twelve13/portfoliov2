@@ -399,5 +399,10 @@ span {
 }
 
 @media (max-width: 768px) {
-
+	.about.about-expand { 
+		height: 40vh;
+		left: -325%;
+		top: 75vh;
+		width: 750%;
 	}
+}

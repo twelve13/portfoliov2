@@ -137,8 +137,10 @@ span {
 .listing-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+	height: 80%;
 	justify-content: center;
 	width: 100%;
+	overflow: scroll;
 
 }
 
@@ -233,7 +235,7 @@ span {
 	height: 75%;
 }
 
-.image-and-links, .blurb {
+.project-image, .description {
 	box-sizing: border-box;
 	height: 100%;
 	padding: 5%;
@@ -246,9 +248,9 @@ span {
 }
 
 .description {
-	align-content: space-around;
+/*	align-content: center;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
 	height: 500px;
 }
 
@@ -259,9 +261,9 @@ span {
 
 .project-links {
 	color: white;
-	display: flex;
+	/*display: flex;*/
 	font-size: 1.1em;
-	justify-content: space-around;
+/*	justify-content: space-around;*/
 	padding-top: 5%;
 	width: 100%;
 }

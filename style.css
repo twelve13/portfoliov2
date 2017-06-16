@@ -382,8 +382,8 @@ span {
 }
 
 .contact-close {
-	font-size: 10px;
-	margin: 10px 5px;
+	font-size: 20px;
+	margin: 10px 10px;
 	text-decoration: underline;
 }
 
@@ -448,14 +448,15 @@ span {
 
  	.about.about-expand { 
  		height: 60vh;
- 		left: -400%;
+ 		left: -390%;
+ 		top: 30vh;
  		width: 800%;
  	}
 
  	.full-name {
 
-	font-size: 100%;
-	margin-bottom: 20%;
+	font-size: 120%;
+	margin-bottom: 10%;
 
 	}
 	.about-listing {
@@ -497,7 +498,7 @@ span {
 	width: 80%;
 }
 .project-listing, .blurb {
-	font-size: 110%;
+	font-size: 90%;
 }
 
 .image-and-links, .blurb {
@@ -534,6 +535,14 @@ span {
 	width: 15px;
 }
 
+.email {
+	font-size: 5px;
+}
+
+.contact-close {
+	font-size: 10px;
+	margin: 0 1px 10px 2px;
+}
 }
 
 @media (min-width: 481px) and (max-width: 768px) {

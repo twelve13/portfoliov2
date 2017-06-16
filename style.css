@@ -506,7 +506,7 @@ span {
  		height: 70vh;
  		left: -400%;
  		top: 70vh;
- 		width: 900%;
+ 		width: 600%;
  	}
  /*	.about.about-shrink { 
 	height: 60px;
@@ -519,20 +519,17 @@ span {
 	font-size: 110%;
 	}
 
-/*.projects-outer {
+.projects-outer {
 	width: 50px;
 }
 
-.projects {
+/*.projects {
 	height: 130px;
 	top: 18px;
 	width: 24px;
 }
 .projects.projects-expand { 
-	height: 80vh;
-	left: -1000%;
-	top: -130vh;
-	width: 1700%;
+	width: 1500%;
 }
 
 .projects.projects-shrink { 
@@ -563,5 +560,9 @@ span {
 	margin: 0 0 1px 1px;
 	width: 27px;
 }*/
+.project-image img {
+	height: 80%;
+	width: 80%;
+}
 
  }

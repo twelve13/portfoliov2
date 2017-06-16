@@ -229,6 +229,7 @@ span {
 
 .project-info {
 	display: flex;
+	flex-wrap: wrap;
 	height: 75%;
 }
 
@@ -398,10 +399,147 @@ span {
 	color: white;
 }
 
-@media only screen and (max-width: 768px) {
 
+
+/*MOBILE VERTICAL*/
+
+@media only screen and (max-width: 480px) {
 	.name-letter {
 		color: red;
+	}
+
+.about-button, .projects-button, .contact-button {
+
+	border-radius: 18%;
+	box-sizing: border-box;
+
+	height: 30px;
+
+	width: 100px;
+}
+
+	.nav {
+	display: block;
+	font-size: 100%;
+	justify-content: center;
+	margin: 5% 0 0 5%;
+	width: 55%;
+	}
+
+	.name {
+	
+	height: 20vh;
+	}
+
+	.name-letter {
+	font-size: 500%;
+	}
+
+	.about-outer {
+	width: 32px;
+	}
+
+	.about {
+		height: 28px;
+		width: 18px;
+		border: black solid 12px;
+		top: 23px;
+	}
+
+ 	.about.about-expand { 
+ 		height: 60vh;
+ 		left: -400%;
+ 		width: 800%;
+ 	}
+
+ 	.full-name {
+
+	font-size: 100%;
+	margin-bottom: 20%;
+
+	}
+	.about-listing {
+
+	font-size: 60%;
+	}
+
+ 	.about.about-shrink { 
+	height: 28px;
+	left: 0px;
+	top: 23px;
+	width: 18px;
+	}
+	
+
+.projects-outer {
+	width: 20px;
+}
+
+.projects {
+	height: 70px;
+	top: 6px;
+	width: 15px;
+}
+.projects.projects-expand { 
+	height: 85vh;
+	left: -1000%;
+	top: -130vh;
+	width: 1700%;
+}
+
+.projects.projects-shrink { 
+	height: 70px;
+	top: 6px;
+	width: 15px;
+}
+
+.project-listing {
+	width: 80%;
+}
+.project-listing, .blurb {
+	font-size: 110%;
+}
+
+.image-and-links, .blurb {
+
+	width: 100%;
+}
+
+.title-wrapper {
+	font-size: 100%;
+	width: 60%;
+}
+
+.contact-outer {
+	height: 300px;
+	position: relative;
+	width: 30px;
+}
+
+.contact {
+	height: 35px;
+	margin: 0 15px;
+	top: 40px;
+	width: 15px;
+}
+
+.contact-item {
+	top: 10px;
+}
+
+.bulletpoint {
+	border-radius: 3px;
+	height: 15px;
+	margin: 0 0 1px 1px;
+	width: 15px;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+	.name-letter {
+		color: orange;
 	}
  	.about.about-expand { 
  		height: 50vh;
@@ -486,7 +624,7 @@ span {
 @media (min-width: 769px) and (max-width: 1024px) {
 
 	.name-letter {
-		color: orange;
+		color: yellow;
 	}
 /*	.name-letter {
 	font-size: 1000%;
@@ -523,43 +661,16 @@ span {
 	width: 50px;
 }
 
-/*.projects {
-	height: 130px;
-	top: 18px;
-	width: 24px;
-}
-.projects.projects-expand { 
-	width: 1500%;
-}
 
-.projects.projects-shrink { 
-	height: 130px;
-	top: 18px;
-	width: 24px;
-}
 
 .project-listing, .blurb {
-	font-size: 150%;
+	font-size: 125%;
 }
 
-.title-wrapper {
-	font-size: 200%;
-	width: 60%;
+.project-image {
+	padding-left: 5%;
 }
 
-.contact {
-	height: 68px;
-	margin: 0 15px;
-	top: 80px;
-	width: 24px;
-}
-
-.bulletpoint {
-	border-radius: 8px;
-	height: 27px;
-	margin: 0 0 1px 1px;
-	width: 27px;
-}*/
 .project-image img {
 	height: 80%;
 	width: 80%;

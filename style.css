@@ -398,33 +398,22 @@ span {
 	color: white;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+
 	.name-letter {
-	font-size: 1000%;
-	}
-	.about {
-		height: 60px;
-		width: 32px;
-		border: black solid 20px;
-		top: 52px;
+		color: red;
 	}
  	.about.about-expand { 
- 		/*height: 70vh;*/
- 		left: -150%;
+ 		height: 50vh;
+ 		left: -200%;
  		width: 500%;
  	}
- 	.about.about-shrink { 
-	height: 60px;
-	left: 0px;
-	top: 52px;
-	width: 32px;
-	}
 	.about-listing {
 
 	font-size: 130%;
 	}
-}
-@media (max-width: 1024px) and (orientation: landscape) {
+
+
 	.name-letter {
 	font-size: 1000%;
 	}
@@ -437,24 +426,16 @@ span {
 		height: 60px;
 		width: 32px;
 		border: black solid 20px;
-		top: 52px;
+		top: 47px;
 	}
- 	.about.about-expand { 
- 		height: 70vh;
- 		left: -400%;
- 		top: 70vh;
- 		width: 900%;
- 	}
+
  	.about.about-shrink { 
 	height: 60px;
 	left: 0px;
-	top: 52px;
+	top: 47px;
 	width: 32px;
 	}
-	.about-listing {
-
-	font-size: 110%;
-	}
+	
 
 .projects-outer {
 	width: 50px;
@@ -462,7 +443,7 @@ span {
 
 .projects {
 	height: 130px;
-	top: 25px;
+	top: 18px;
 	width: 24px;
 }
 .projects.projects-expand { 
@@ -474,7 +455,7 @@ span {
 
 .projects.projects-shrink { 
 	height: 130px;
-	top: 25px;
+	top: 18px;
 	width: 24px;
 }
 
@@ -486,5 +467,101 @@ span {
 	font-size: 200%;
 	width: 60%;
 }
+
+.contact {
+	height: 68px;
+	margin: 0 15px;
+	top: 80px;
+	width: 24px;
+}
+
+.bulletpoint {
+	border-radius: 8px;
+	height: 27px;
+	margin: 0 0 1px 1px;
+	width: 27px;
+}
+
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+	.name-letter {
+		color: orange;
+	}
+/*	.name-letter {
+	font-size: 1000%;
+	}
+
+	.about-outer {
+	width: 80px;
+}
+
+	.about {
+		height: 60px;
+		width: 32px;
+		border: black solid 20px;
+		top: 47px;
+	}*/
+ 	.about.about-expand { 
+ 		height: 70vh;
+ 		left: -400%;
+ 		top: 70vh;
+ 		width: 900%;
+ 	}
+ /*	.about.about-shrink { 
+	height: 60px;
+	left: 0px;
+	top: 47px;
+	width: 32px;
+	}*/
+	.about-listing {
+
+	font-size: 110%;
+	}
+
+/*.projects-outer {
+	width: 50px;
+}
+
+.projects {
+	height: 130px;
+	top: 18px;
+	width: 24px;
+}
+.projects.projects-expand { 
+	height: 80vh;
+	left: -1000%;
+	top: -130vh;
+	width: 1700%;
+}
+
+.projects.projects-shrink { 
+	height: 130px;
+	top: 18px;
+	width: 24px;
+}
+
+.project-listing, .blurb {
+	font-size: 150%;
+}
+
+.title-wrapper {
+	font-size: 200%;
+	width: 60%;
+}
+
+.contact {
+	height: 68px;
+	margin: 0 15px;
+	top: 80px;
+	width: 24px;
+}
+
+.bulletpoint {
+	border-radius: 8px;
+	height: 27px;
+	margin: 0 0 1px 1px;
+	width: 27px;
+}*/
 
  }

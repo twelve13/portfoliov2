@@ -50,7 +50,7 @@ const moveup = function() {
 	var id = setInterval(scrollup, 10);
 	
 	function scrollup() {
-		if(y<=height){
+		if(y<=0){
 			clearInterval(id);
 		} else {
 			window.scroll(0, y);

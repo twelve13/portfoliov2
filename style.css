@@ -99,7 +99,7 @@ a {
 	left: 0px;
 	margin-bottom: 10vh;
 	overflow: hidden;
-	position: absolute;
+	position: relative;
 	top: 82px;
 	width: 54px;
 	-moz-transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s;
@@ -129,11 +129,21 @@ a {
 }
 
 .about-close {
-	font-size: 125%;
-	height: 20px;
-	margin-top: 1%;
+	background-color: white;
+	display: flex;
+	height: 30px;
+	justify-content: center;
+	position: absolute;
 	text-align: center;
-	text-decoration: underline;
+	width: 100%;
+}
+
+.about-close-button {
+	background-color: black;
+	border-radius: 0 0 25% 25%;
+	color: white;
+	font-size: 125%;
+	width: 10%;
 }
 
 span {
@@ -162,7 +172,9 @@ span {
 .full-name {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 300%;
-	margin: 2% 0;
+	margin: 5% 0;
+	text-align: center;
+	width: 100%;
 }
 
 
@@ -215,14 +227,40 @@ span {
 	padding-left: 5%;
 }
 .projects-close {
-	color: white;
-	padding: 2% 2% 0 0;
+	display: flex;
+	height: 30px;
+	justify-content: flex-end;
 	position: relative;
-	left: 85%;
-	text-align: right;
-	text-decoration: underline;
+	text-align: center;
+	width: 100%;
+}
+
+.projects-close-button {
+	background-color: white;
+	border-radius: 0 0 25% 25%;
+		font-size: 125%;
+	margin: 2px 10px 0 0 ;
 	width: 10%;
 }
+
+/*.about-close {
+	background-color: white;
+	display: flex;
+	height: 30px;
+	justify-content: center;
+	position: absolute;
+	text-align: center;
+	text-decoration: underline;
+	width: 100%;
+}
+
+.about-close-button {
+	background-color: black;
+	border-radius: 0 0 25% 25%;
+	color: white;
+	font-size: 125%;
+	width: 20%;
+}*/
 
 .project-listing {
 	color: gray;

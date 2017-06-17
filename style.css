@@ -52,7 +52,7 @@ a {
 .name {
 	display: flex;
 	font-family: 'Viga', sans-serif;
-	height: 40vh;
+	height: 300px;
 	justify-content: center;
 	width: 100%;
 }
@@ -83,6 +83,7 @@ a {
 }
 
 .about-outer {
+	/*background-color: orange;*/
 	height: 300px;
 	position: relative;
 	width: 120px;

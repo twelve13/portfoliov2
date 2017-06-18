@@ -78,7 +78,9 @@ const moveup2 = function() {
 aboutButton.click(function(){
 	about.removeClass("about-shrink");
 	about.addClass("about-expand");
-	aboutWrapper.addClass("showme");
+	setTimeout(function(){
+		aboutWrapper.addClass("showme");
+	}, 1000);
 	aboutViewer.addClass("show-about-viewer");
 	movedown();	
 });
@@ -95,7 +97,9 @@ projectsButton.click(function() {
 	studiiProject.addClass("showflex");
 	projects.removeClass("projects-shrink");
 	projects.addClass("projects-expand");
-	projectsWrapper.addClass("showme");
+	setTimeout(function(){
+		projectsWrapper.addClass("showme");
+	}, 1000);
 	projectsViewer.addClass("showprojects")
 	moveup();
 });

@@ -94,7 +94,6 @@ a {
 	border-radius: 40%;
 	display: flex;
 	flex-wrap: wrap;
-	color: white;
 	height: 83px;
 	justify-content: center;
 	left: 0px;
@@ -103,14 +102,13 @@ a {
 	position: relative;
 	top: 82px;
 	width: 54px;
-	-moz-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 1s, left 0.3s linear 1s, border-radius 0.3s linear 1s, color 0.3s linear 1s;
-	-o-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 1s, left 0.3s linear 1s, border-radius 0.3s linear 1s, color 0.3s linear 1s;
-	-webkit-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 1s, left 0.3s linear 1s, border-radius 0.3s linear 1s, color 0.3s linear 1s;
-	transition: height 0.3s linear 1s, width 0.3s linear 1s, top 2s, left 0.3s linear 1s, border-radius 0.3s linear 1s, color 0.3s linear 1s;
+	-moz-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 1s, left 0.3s linear 1s, border-radius 0.3s linear 1s;
+	-o-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 1s, left 0.3s linear 1s, border-radius 0.3s linear 1s;
+	-webkit-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 1s, left 0.3s linear 1s, border-radius 0.3s linear 1s;
+	transition: height 0.3s linear 1s, width 0.3s linear 1s, top 2s, left 0.3s linear 1s, border-radius 0.3s linear 1s;
 }
 
 .about.about-expand { 
-	color: black;
 	height: 80vh;
 	left: -40vw;
 	top: 100vh;
@@ -124,10 +122,10 @@ a {
 	top: 82px;
 	width: 54px;
 	border-radius: 40%;
-	-moz-transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s, color 1s;
-	-o-transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s, color 1s;
-	-webkit-transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s, color 1s;
-	transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s, color 1s;
+	-moz-transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s;
+	-o-transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s;
+	-webkit-transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s;
+	transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s;
 }
 
 .about-close {

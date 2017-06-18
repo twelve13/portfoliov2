@@ -172,7 +172,7 @@ span {
 .full-name {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 300%;
-	margin: 5% 0 1% 0;
+	margin: 4% 0 1% 0;
 	text-align: center;
 	width: 100%;
 }
@@ -428,6 +428,12 @@ span {
 
 .white{
 	color: white;
+}
+
+@media (max-width: 480px) {
+	.name-letter{
+		color: red;
+	}
 }
 
 /*@media only screen and (max-width: 480px) {

@@ -36,7 +36,7 @@ const movedown = function() {
 	var id = setInterval(scrolldown, 10);
 
 	function scrolldown() {
-		if(y > 2.3*height){
+		if(y > 3*height){
 			clearInterval(id);
 		} else {
 			window.scroll(0, y);
@@ -59,6 +59,21 @@ const moveup = function() {
 	};
 };
 
+const moveup2 = function() {
+	var y = height;
+	var id = setInterval(scrollup, 10);
+	
+	function scrollup() {
+		if(y<=height){
+			clearInterval(id);
+		} else {
+			window.scroll(0, y);
+			y = y - 10;
+		};
+	};
+};
+
+
 
 aboutButton.click(function(){
 	about.removeClass("about-shrink");
@@ -72,7 +87,7 @@ aboutClose.click(function(){
 	about.removeClass("about-expand");
 	about.addClass("about-shrink");
 	aboutWrapper.removeClass("showme");
-	moveup();
+	moveup2();
 });
 
 projectsButton.click(function() {

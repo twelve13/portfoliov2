@@ -122,10 +122,10 @@ a {
 	top: 82px;
 	width: 54px;
 	border-radius: 40%;
-	-moz-transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s;
-	-o-transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s;
-	-webkit-transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s;
-	transition: height 1s, width 1s, top 1s, left 1s, border-radius 1s;
+	-moz-transition: height 1s, width 1s, top 2s, left 1s, border-radius 1s;
+	-o-transition: height 1s, width 1s, top 2s, left 1s, border-radius 1s;
+	-webkit-transition: height 1s, width 2s, top 1s, left 1s, border-radius 1s;
+	transition: height 1s, width 1s, top 2s, left 1s, border-radius 1s;
 }
 
 .about-close {
@@ -221,10 +221,10 @@ span {
 	left: 0px;
 	top: 40px;
 	width: 32px;
-	-moz-transition: height 1s, width 1s, top 1s, left 1s;
-	-o-transition: height 1s, width 1s, top 1s, left 1s;
-	-webkit-transition: height 1s, width 1s, top 1s, left 1s;
-	transition: height 1s, width 1s, top 1s, left 1s;
+	-moz-transition: height 1s, width 1s, top 2s, left 1s;
+	-o-transition: height 1s, width 1s, top 2s, left 1s;
+	-webkit-transition: height 1s, width 1s, top 2s, left 1s;
+	transition: height 1s, width 1s, top 2s, left 1s;
 }
 
 .projects-nav {
@@ -436,30 +436,6 @@ span {
 	}
 }
 
-/*@media only screen and (max-width: 480px) {
-	.name-letter {
-	color: red;
-}
-}*/
 
-
-/*MOBILE VERTICAL*/
-
-/*@media only screen and (max-width: 480px) {
-
-
-
-.about.about-expand { 
-	height: 50vh;
-
-}
-
-	.project-image, .description {
-		width: 100%;
-	}
-
-
-	
-}*/
 
 

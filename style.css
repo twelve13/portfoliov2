@@ -109,19 +109,19 @@ a {
 }
 
 .about.about-expand { 
+	border-radius: 5%;
 	height: 80vh;
 	left: -40vw;
 	top: 100vh;
 	width: 90vw;
-	border-radius: 5%;
 }
 
 .about.about-shrink { 
+	border-radius: 40%;
 	height: 83px;
 	left: 0px;
 	top: 82px;
 	width: 54px;
-	border-radius: 40%;
 	-moz-transition: height 1s, width 1s, top 2s, left 1s, border-radius 1s;
 	-o-transition: height 1s, width 1s, top 2s, left 1s, border-radius 1s;
 	-webkit-transition: height 1s, width 2s, top 1s, left 1s, border-radius 1s;
@@ -155,9 +155,8 @@ span {
 	flex-wrap: wrap;
 	height: 80%;
 	justify-content: space-around;
-	width: 100%;
 	overflow: scroll;
-
+	width: 100%;
 }
 
 .about-listing {
@@ -277,9 +276,6 @@ span {
 }
 
 .description {
-/*	align-content: center;
-	display: flex;
-	flex-wrap: wrap;*/
 	height: 500px;
 }
 
@@ -290,9 +286,7 @@ span {
 
 .project-links {
 	color: white;
-	/*display: flex;*/
 	font-size: 1.1em;
-/*	justify-content: space-around;*/
 	padding-top: 5%;
 	width: 100%;
 }
@@ -389,14 +383,10 @@ span {
 	overflow: hidden;
 	padding-left: 5%;
 	width: 0%;
-	-moz-transition: width 1s;
-	-o-transition: width 1s;
-	-webkit-transition: width 1s;
-	transition: width 1s;	
-	-moz-transition-delay: .5s;
-	-o-transition-delay: .5s;
-	-webkit-transition-delay: .5s;
-	transition-delay: .5s;
+	-moz-transition: width 1s linear .5s;
+	-o-transition: width 1s linear .5s;
+	-webkit-transition: width 1s linear .5s;
+	transition: width 1s linear .5s;	
 }
 
 .contact-link.show-link {
@@ -404,8 +394,10 @@ span {
 }
 
 .contact-link.hide-link{
-	transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-o-transition-delay: 0s;
 	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
 }
 
 .contact-link a {
@@ -430,11 +422,6 @@ span {
 	color: white;
 }
 
-@media (max-width: 480px) {
-	.name-letter{
-		color: red;
-	}
-}
 
 
 

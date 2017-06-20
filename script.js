@@ -59,7 +59,7 @@ const moveup = function() {
 	};
 };
 
-const moveup2 = function() {
+const moveupAbout = function() {
 	var y = height;
 	var id = setInterval(scrollup, 10);
 	
@@ -89,7 +89,7 @@ aboutClose.click(function(){
 	about.removeClass("about-expand");
 	about.addClass("about-shrink");
 	aboutWrapper.removeClass("showme");
-	moveup2();
+	moveupAbout();
 });
 
 projectsButton.click(function() {

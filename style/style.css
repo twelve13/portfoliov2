@@ -68,9 +68,9 @@ a {
 	display: flex;
 	font-family: 'Permanent Marker', cursive;
 	font-size: 300%;
-	height: 25vh;
+	height: 20vh;
 	justify-content: flex-end;
-	margin-top: 2%;
+	margin-top: 5%;
 	width: 80%;
 }
 

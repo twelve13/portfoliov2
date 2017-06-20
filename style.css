@@ -250,7 +250,7 @@ span {
 	color: gray;
 	display: flex;
 	font-size: 1.5em;
-	width: 40%;
+	width: 100%;
 }
 
 .project-listing:hover{
@@ -383,10 +383,10 @@ span {
 	overflow: hidden;
 	padding-left: 5%;
 	width: 0%;
-	-moz-transition: width 1s linear .5s;
-	-o-transition: width 1s linear .5s;
-	-webkit-transition: width 1s linear .5s;
-	transition: width 1s linear .5s;	
+	-moz-transition: width 0.7s ease .6s;
+	-o-transition: width 0.7s ease .6s;
+	-webkit-transition: width 0.7s ease .6s;
+	transition: width 0.7s ease .6s;	
 }
 
 .contact-link.show-link {

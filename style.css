@@ -155,7 +155,7 @@ span {
 	flex-wrap: wrap;
 	height: 80%;
 	justify-content: space-around;
-	overflow: scroll;
+	overflow: auto;
 	width: 100%;
 }
 

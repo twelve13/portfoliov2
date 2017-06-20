@@ -22,7 +22,7 @@ a {
 
 .nav-and-contact-viewer {
 	display: flex;
-	height: 35vh;
+	height: 33vh;
 	width: 100%;
 }
 
@@ -32,7 +32,8 @@ a {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 200%;
 	justify-content: center;
-	width: 55%;
+	margin-left: 2%;
+	width: 53%;
 }
 
 .about-button, .projects-button, .contact-button {
@@ -52,7 +53,7 @@ a {
 .name {
 	display: flex;
 	font-family: 'Viga', sans-serif;
-	height: 300px;
+	height: 240px;
 	justify-content: center;
 	width: 100%;
 }
@@ -69,6 +70,7 @@ a {
 	font-size: 300%;
 	height: 25vh;
 	justify-content: flex-end;
+	margin-top: 2%;
 	width: 80%;
 }
 
@@ -102,10 +104,10 @@ a {
 	position: relative;
 	top: 82px;
 	width: 54px;
-	-moz-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 1s, left 0.3s linear 1s, border-radius 0.3s linear 1s;
-	-o-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 1s, left 0.3s linear 1s, border-radius 0.3s linear 1s;
-	-webkit-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 1s, left 0.3s linear 1s, border-radius 0.3s linear 1s;
-	transition: height 0.3s linear 1s, width 0.3s linear 1s, top 2s, left 0.3s linear 1s, border-radius 0.3s linear 1s;
+	-moz-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
+	-o-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
+	-webkit-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
+	transition: height 0.6s linear 1s, width 0.6s linear 1s, top 2s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
 }
 
 .about.about-expand { 
@@ -205,7 +207,7 @@ span {
 	-moz-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 2s, left 0.3s linear 1s;
 	-o-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 2s, left 0.3s linear 1s;
 	-webkit-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 2s, left 0.3s linear 1s;
-	transition: height 0.3s linear 1s, width 0.3s linear 1s, top 2s, left 0.3s linear 1s;
+	transition: height 0.6s linear 1s, width 0.6s linear 1s, top 2s, left 0.6s linear 1s;
 }
 
 .projects.projects-expand { 
@@ -253,7 +255,7 @@ span {
 	width: 100%;
 }
 
-.project-listing:hover{
+.project-listing p:hover{
 	color: white;
 }
 
@@ -381,7 +383,7 @@ span {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 150%;
 	overflow: hidden;
-	padding-left: 5%;
+	padding-left: 6%;
 	width: 0%;
 	-moz-transition: width 0.7s ease .6s;
 	-o-transition: width 0.7s ease .6s;

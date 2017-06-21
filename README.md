@@ -1,1 +1,3 @@
-# portfoliov2
+# Portfolio
+
+I wanted to create a portfolio site that appears minimalistic, but reveals a lot below the surface; a site that is simple but with an element of whimsy and surprise.  Developing this site was a personal challenge in the logistics of layout and CSS.  After many versions, revisions, and possible wrong turns, it is rewarding to see my vision come to life.  Click around, and feel free to contact me!

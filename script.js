@@ -31,6 +31,8 @@ var simon = $(".simon");
 var simonProject = $(".simon-project");
 var cache = $(".cache");
 var cacheProject = $(".cache-project");
+var dcAttractions = $(".dc-attractions");
+var dcAttractionsProject = $(".dc-attractions-project");
 
 
 const movedown = function() {
@@ -115,6 +117,8 @@ projectsClose.click(function(){
 	simonProject.removeClass("showflex");
 	cache.removeClass("white");
 	cacheProject.removeClass("showflex");
+	dcAttractions.removeClass("white");
+	dcAttractionsProject.removeClass("showflex");
 	projects.removeClass("projects-expand");
 	projects.addClass("projects-shrink");
 	projectsWrapper.removeClass("showme");
@@ -127,11 +131,13 @@ sampleTracker.on("click", function(){
 	endangered.removeClass("white");
 	simon.removeClass("white");
 	cache.removeClass("white");
-	sampleTrackerProject.addClass("showflex")
+	dcAttractions.removeClass("white");
+	sampleTrackerProject.addClass("showflex");
 	studiiProject.removeClass("showflex");
 	endangeredProject.removeClass("showflex");
 	simonProject.removeClass("showflex");
 	cacheProject.removeClass("showflex");
+	dcAttractionsProject.removeClass("showflex");
 });
 
 studii.on("click", function(){
@@ -140,11 +146,13 @@ studii.on("click", function(){
 	endangered.removeClass("white");
 	simon.removeClass("white");
 	cache.removeClass("white");
+	dcAttractions.removeClass("white");
 	sampleTrackerProject.removeClass("showflex");
 	studiiProject.addClass("showflex");
 	endangeredProject.removeClass("showflex");
 	simonProject.removeClass("showflex");
 	cacheProject.removeClass("showflex");
+	dcAttractionsProject.removeClass("showflex");
 });
 
 endangered.on("click", function(){
@@ -153,11 +161,13 @@ endangered.on("click", function(){
 	endangered.addClass("white");
 	simon.removeClass("white");
 	cache.removeClass("white");
+	dcAttractions.removeClass("white");
 	sampleTrackerProject.removeClass("showflex");
 	studiiProject.removeClass("showflex");
 	endangeredProject.addClass("showflex");
 	simonProject.removeClass("showflex");
 	cacheProject.removeClass("showflex");
+	dcAttractionsProject.removeClass("showflex");
 });
 
 simon.on("click", function(){
@@ -166,11 +176,13 @@ simon.on("click", function(){
 	endangered.removeClass("white");
 	simon.addClass("white");
 	cache.removeClass("white");
+	dcAttractions.removeClass("white");
 	sampleTrackerProject.removeClass("showflex");
 	studiiProject.removeClass("showflex");
 	endangeredProject.removeClass("showflex");
 	simonProject.addClass("showflex");
 	cacheProject.removeClass("showflex");
+	dcAttractionsProject.removeClass("showflex");
 });
 
 cache.on("click", function(){
@@ -179,11 +191,28 @@ cache.on("click", function(){
 	endangered.removeClass("white");
 	simon.removeClass("white");
 	cache.addClass("white");
+	dcAttractions.removeClass("white");
 	sampleTrackerProject.removeClass("showflex");
 	studiiProject.removeClass("showflex");
 	endangeredProject.removeClass("showflex");
 	simonProject.removeClass("showflex");
 	cacheProject.addClass("showflex");
+	dcAttractionsProject.removeClass("showflex");
+});
+
+dcAttractions.on("click", function(){
+	sampleTracker.removeClass("white");
+	studii.removeClass("white");
+	endangered.removeClass("white");
+	simon.removeClass("white");
+	cache.removeClass("white");
+	dcAttractions.addClass("white");
+	sampleTrackerProject.removeClass("showflex");
+	studiiProject.removeClass("showflex");
+	endangeredProject.removeClass("showflex");
+	simonProject.removeClass("showflex");
+	cacheProject.removeClass("showflex");
+	dcAttractionsProject.addClass("showflex");
 });
 
 

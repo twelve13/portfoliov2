@@ -16,6 +16,8 @@ var projects = $(".projects");
 var projectsClose = $(".projects-close");
 var projectsWrapper = $(".projects-wrapper");
 var projectsViewer = $(".projects-viewer");
+var projectListing = $(".project-listing");
+var projectInfo = $(".project-info");
 
 var contactLink = $(".contact-link");
 var contactItem = $(".contact-item");
@@ -109,16 +111,9 @@ projectsButton.click(function() {
 });
 
 projectsClose.click(function(){
-	studii.removeClass("white");
-	studiiProject.removeClass("showflex")
-	endangered.removeClass("white");
-	endangeredProject.removeClass("showflex");
-	simon.removeClass("white");
-	simonProject.removeClass("showflex");
-	cache.removeClass("white");
-	cacheProject.removeClass("showflex");
-	dcAttractions.removeClass("white");
-	dcAttractionsProject.removeClass("showflex");
+	projectListing.removeClass("white");
+	sampleTracker.addClass("white");
+	projectInfo.removeClass("showflex");
 	projects.removeClass("projects-expand");
 	projects.addClass("projects-shrink");
 	projectsWrapper.removeClass("showme");
@@ -126,92 +121,44 @@ projectsClose.click(function(){
 });
 
 sampleTracker.on("click", function(){
+	projectListing.removeClass("white");
 	sampleTracker.addClass("white");
-	studii.removeClass("white");
-	endangered.removeClass("white");
-	simon.removeClass("white");
-	cache.removeClass("white");
-	dcAttractions.removeClass("white");
+	projectInfo.removeClass("showflex");
 	sampleTrackerProject.addClass("showflex");
-	studiiProject.removeClass("showflex");
-	endangeredProject.removeClass("showflex");
-	simonProject.removeClass("showflex");
-	cacheProject.removeClass("showflex");
-	dcAttractionsProject.removeClass("showflex");
 });
 
 studii.on("click", function(){
-	sampleTracker.removeClass("white");
+	projectListing.removeClass("white");
 	studii.addClass("white");
-	endangered.removeClass("white");
-	simon.removeClass("white");
-	cache.removeClass("white");
-	dcAttractions.removeClass("white");
-	sampleTrackerProject.removeClass("showflex");
+	projectInfo.removeClass("showflex");
 	studiiProject.addClass("showflex");
-	endangeredProject.removeClass("showflex");
-	simonProject.removeClass("showflex");
-	cacheProject.removeClass("showflex");
-	dcAttractionsProject.removeClass("showflex");
 });
 
 endangered.on("click", function(){
-	sampleTracker.removeClass("white");
-	studii.removeClass("white");
+	projectListing.removeClass("white");
 	endangered.addClass("white");
-	simon.removeClass("white");
-	cache.removeClass("white");
-	dcAttractions.removeClass("white");
-	sampleTrackerProject.removeClass("showflex");
-	studiiProject.removeClass("showflex");
+	projectInfo.removeClass("showflex");
 	endangeredProject.addClass("showflex");
-	simonProject.removeClass("showflex");
-	cacheProject.removeClass("showflex");
-	dcAttractionsProject.removeClass("showflex");
 });
 
 simon.on("click", function(){
-	sampleTracker.removeClass("white");
-	studii.removeClass("white");
-	endangered.removeClass("white");
+	projectListing.removeClass("white");
 	simon.addClass("white");
-	cache.removeClass("white");
-	dcAttractions.removeClass("white");
-	sampleTrackerProject.removeClass("showflex");
-	studiiProject.removeClass("showflex");
-	endangeredProject.removeClass("showflex");
+	projectInfo.removeClass("showflex");
 	simonProject.addClass("showflex");
-	cacheProject.removeClass("showflex");
-	dcAttractionsProject.removeClass("showflex");
 });
 
 cache.on("click", function(){
-	sampleTracker.removeClass("white");
-	studii.removeClass("white");
-	endangered.removeClass("white");
-	simon.removeClass("white");
+	projectListing.removeClass("white");
 	cache.addClass("white");
-	dcAttractions.removeClass("white");
-	sampleTrackerProject.removeClass("showflex");
-	studiiProject.removeClass("showflex");
-	endangeredProject.removeClass("showflex");
-	simonProject.removeClass("showflex");
+	projectInfo.removeClass("showflex");
 	cacheProject.addClass("showflex");
-	dcAttractionsProject.removeClass("showflex");
 });
 
 dcAttractions.on("click", function(){
-	sampleTracker.removeClass("white");
-	studii.removeClass("white");
-	endangered.removeClass("white");
-	simon.removeClass("white");
-	cache.removeClass("white");
+	projectListing.removeClass("white");
 	dcAttractions.addClass("white");
-	sampleTrackerProject.removeClass("showflex");
-	studiiProject.removeClass("showflex");
-	endangeredProject.removeClass("showflex");
-	simonProject.removeClass("showflex");
-	cacheProject.removeClass("showflex");
+	projectInfo.removeClass("showflex");
 	dcAttractionsProject.addClass("showflex");
 });
 

@@ -302,6 +302,10 @@ span {
 	color: white;
 }
 
+.sample-tracker-project, .studii-project, .endangered-project, .simon-project, .cache-project, .dc-attractions-project {
+	display: none;
+}
+
 .contact-viewer {
 	align-items: center;
 	display: flex;

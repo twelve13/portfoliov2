@@ -3,7 +3,7 @@
 	padding: 0;	
 }
 
-.about-wrapper, .projects-wrapper, .studii-project, .endangered-project, .simon-project, .cache-project, .dc-attractions-project {
+.about-wrapper, .projects-wrapper {
 	display: none;
 }
 
@@ -300,6 +300,10 @@ span {
 
 .sample-tracker, {
 	color: white;
+}
+
+.sample-tracker-project, .studii-project, .endangered-project, .simon-project, .cache-project, .dc-attractions-project {
+	display: none;
 }
 
 .contact-viewer {

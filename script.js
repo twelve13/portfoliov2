@@ -33,17 +33,19 @@ var simon = $(".simon");
 var simonProject = $(".simon-project");
 var cache = $(".cache");
 var cacheProject = $(".cache-project");
-var dcAttractions = $(".dc-attractions");
-var dcAttractionsProject = $(".dc-attractions-project");
-
+//var dcAttractions = $(".dc-attractions");
+//var dcAttractionsProject = $(".dc-attractions-project");
+var cssArt = $(".css-art");
+var cssArtProject = $(".css-art-project");
 
 const movedown = function() {
 	var y = height;
 	var id = setInterval(scrolldown, 10);
 
+	//need conditional or it'll scroll down forever
 	function scrolldown() {
 		if(y > 4*height){
-			clearInterval(id);
+		 	clearInterval(id);
 		} else {
 			window.scroll(0, y);
 			y = y + 10;
@@ -155,12 +157,19 @@ cache.on("click", function(){
 	cacheProject.addClass("showflex");
 });
 
-dcAttractions.on("click", function(){
+// dcAttractions.on("click", function(){
+// 	projectListing.removeClass("white");
+// 	dcAttractions.addClass("white");
+// 	projectInfo.removeClass("showflex");
+// 	dcAttractionsProject.addClass("showflex");
+// });
+
+cssArt.on("click", function(){
 	projectListing.removeClass("white");
-	dcAttractions.addClass("white");
+	cssArt.addClass("white");
 	projectInfo.removeClass("showflex");
-	dcAttractionsProject.addClass("showflex");
-});
+	cssArtProject.addClass("showflex");
+})
 
 
 contactButton.click(function(){

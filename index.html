@@ -35,7 +35,7 @@
 							<div class="full-name">Caroline Chen</div>
 							<div class="about-listing">I have always been drawn to both logic and creativity.</div>
                                 
-      						<div class="about-listing">There is something comforting about knowing that <span>this</span> will result in <span>that</span>, and any problem can be solved if you just have the correct tools and know how to use them.  I have enjoyed a past career in forensic science, where I applied critical thinking to solve mysteries and do some social good.</div>  
+      						<div class="about-listing">There is something comforting about knowing that <em>this</em> will result in <em>that</em>, and any problem can be solved if you just have the correct tools and know how to use them.  I have enjoyed a past career in forensic science, where I applied critical thinking to solve mysteries and do some social good.</div>  
 
       						<div class="about-listing">There is something freeing in knowing you can create something new, something different in some way from anything else in existence.  This love of creation has fueled art projects galore, projects of baking, knitting, sewing, and performance.</div>  
 
@@ -50,12 +50,26 @@
  					<div class="projects-wrapper">
  						<div class="projects-close"><div class="projects-close-button">close</div></div>
 						<div class="projects-nav">
-							<div class="project-listing sample-tracker"><p>&gt; Sample Tracker</p></div>
- 							<div class="project-listing studii"><p>&gt; Studii<p></div>
- 							<div class="project-listing endangered"><p>&gt; Endangered In The East<p></div>
- 							<div class="project-listing simon"><p>&gt; Metro Simon<p></div>
- 							<div class="project-listing cache"><p>&gt; Cache<p></div>
- 							<div class="project-listing css-art"><p>&gt; CSS Illustrations</p></div>
+							<div>
+								<input id="sample-tracker-radio" name="project-radio" type="radio" checked="checked">
+								<label for="sample-tracker-radio"><span class="project-listing">Sample Tracker</span></label>
+							</div>
+							<div>
+								<input id="cache-radio" name="project-radio" type="radio">
+								<label for="cache-radio"><span class="project-listing">Cache</span></label>
+							</div>
+							<div>
+								<input id="studii-radio" name="project-radio" type="radio">
+								<label for="studii-radio"><span class="project-listing">Studii</span></label>
+							</div>
+							<div>
+								<input id="metro-simon-radio" name="project-radio" type="radio">
+								<label for="metro-simon-radio"><span class="project-listing">Metro Simon</span></label>
+							</div>
+							<div>
+								<input id="css-art-radio" name="project-radio" type="radio">
+								<label for="css-art-radio"><span class="project-listing">CSS Illustrations</span></label>
+							</div>
   						</div>
   						<div class="project-info sample-tracker-project">
  							<div class="project-image">
@@ -140,7 +154,8 @@
 	</div>
 	
 	<div class="about-viewer"></div>
-
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
 	<script src="script.js"></script>
 </body>
 </html>

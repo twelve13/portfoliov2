@@ -16,23 +16,19 @@ var projects = $(".projects");
 var projectsClose = $(".projects-close");
 var projectsWrapper = $(".projects-wrapper");
 var projectsViewer = $(".projects-viewer");
-var projectListing = $(".project-listing");
 var projectInfo = $(".project-info");
 
 var contactLink = $(".contact-link");
 var contactItem = $(".contact-item");
 var contactClose = $(".contact-close");
 
-var sampleTracker = $(".sample-tracker");
 var sampleTrackerProject = $(".sample-tracker-project");
-var studii = $(".studii");
 var studiiProject = $(".studii-project");
-var simon = $(".simon");
 var simonProject = $(".simon-project");
-var cache = $(".cache");
 var cacheProject = $(".cache-project");
-var cssArt = $(".css-art");
 var cssArtProject = $(".css-art-project");
+
+var label = $("label");
 
 const movedown = function() {
 	var y = height;
@@ -78,7 +74,6 @@ const moveupAbout = function() {
 };
 
 
-
 aboutButton.click(function(){
 	about.removeClass("about-shrink");
 	about.addClass("about-expand");
@@ -97,8 +92,9 @@ aboutClose.click(function(){
 });
 
 projectsButton.click(function() {
-	sampleTracker.addClass("white");
-	sampleTrackerProject.addClass("showflex");
+	if(document.getElementById("sample-tracker-radio").checked) {
+		sampleTrackerProject.addClass("showflex");
+	}
 	projects.removeClass("projects-shrink");
 	projects.addClass("projects-expand");
 	setTimeout(function(){
@@ -109,48 +105,36 @@ projectsButton.click(function() {
 });
 
 projectsClose.click(function(){
-	projectListing.removeClass("white");
-	sampleTracker.addClass("white");
-	projectInfo.removeClass("showflex");
 	projects.removeClass("projects-expand");
 	projects.addClass("projects-shrink");
 	projectsWrapper.removeClass("showme");
 	projectsViewer.removeClass("showprojects")
 });
 
-sampleTracker.on("click", function(){
-	projectListing.removeClass("white");
-	sampleTracker.addClass("white");
+label.on("click", function(){
+	var selectedProjectRadio = this.getAttribute("for");
 	projectInfo.removeClass("showflex");
-	sampleTrackerProject.addClass("showflex");
-});
-
-studii.on("click", function(){
-	projectListing.removeClass("white");
-	studii.addClass("white");
-	projectInfo.removeClass("showflex");
-	studiiProject.addClass("showflex");
-});
-
-simon.on("click", function(){
-	projectListing.removeClass("white");
-	simon.addClass("white");
-	projectInfo.removeClass("showflex");
-	simonProject.addClass("showflex");
-});
-
-cache.on("click", function(){
-	projectListing.removeClass("white");
-	cache.addClass("white");
-	projectInfo.removeClass("showflex");
-	cacheProject.addClass("showflex");
-});
-
-cssArt.on("click", function(){
-	projectListing.removeClass("white");
-	cssArt.addClass("white");
-	projectInfo.removeClass("showflex");
-	cssArtProject.addClass("showflex");
+	sampleTrackerProject.removeClass("showflex");
+	switch(selectedProjectRadio) {
+		case "sample-tracker-radio":
+			sampleTrackerProject.addClass("showflex");
+			break;
+		case "cache-radio":
+			cacheProject.addClass("showflex");
+			break;
+		case "studii-radio":
+			studiiProject.addClass("showflex");
+			break;
+		case "metro-simon-radio":
+			simonProject.addClass("showflex");
+			break;
+		case "css-art-radio":
+			cssArtProject.addClass("showflex");
+			break;
+		default:
+			sampleTrackerProject.addClass("showflex");
+			break;
+	}
 })
 
 

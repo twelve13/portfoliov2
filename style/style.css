@@ -149,10 +149,6 @@ a {
 	width: 10%;
 }
 
-span {
-	font-style: italic;
-}
-
 .listing-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -232,6 +228,15 @@ span {
 .projects-nav {
 	padding-left: 5%;
 }
+
+.projects-nav input:checked ~ label span {
+	color: white;
+}
+
+.projects-nav input {
+	display: none;
+}
+
 .projects-close {
 	display: flex;
 	height: 30px;
@@ -251,19 +256,16 @@ span {
 
 .project-listing {
 	color: gray;
-	display: flex;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	width: 100%;
 }
 
-.project-listing p:hover{
-	color: white;
+.project-listing:hover{
+	font-size: 1.4em;
 }
 
 .project-info {
-	display: flex;
-	flex-wrap: wrap;
-	height: 75%;
+	display: none;
 }
 
 .project-image, .description {

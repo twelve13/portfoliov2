@@ -27,14 +27,10 @@ var sampleTracker = $(".sample-tracker");
 var sampleTrackerProject = $(".sample-tracker-project");
 var studii = $(".studii");
 var studiiProject = $(".studii-project");
-var endangered = $(".endangered");
-var endangeredProject = $(".endangered-project");
 var simon = $(".simon");
 var simonProject = $(".simon-project");
 var cache = $(".cache");
 var cacheProject = $(".cache-project");
-//var dcAttractions = $(".dc-attractions");
-//var dcAttractionsProject = $(".dc-attractions-project");
 var cssArt = $(".css-art");
 var cssArtProject = $(".css-art-project");
 
@@ -136,13 +132,6 @@ studii.on("click", function(){
 	studiiProject.addClass("showflex");
 });
 
-endangered.on("click", function(){
-	projectListing.removeClass("white");
-	endangered.addClass("white");
-	projectInfo.removeClass("showflex");
-	endangeredProject.addClass("showflex");
-});
-
 simon.on("click", function(){
 	projectListing.removeClass("white");
 	simon.addClass("white");
@@ -156,13 +145,6 @@ cache.on("click", function(){
 	projectInfo.removeClass("showflex");
 	cacheProject.addClass("showflex");
 });
-
-// dcAttractions.on("click", function(){
-// 	projectListing.removeClass("white");
-// 	dcAttractions.addClass("white");
-// 	projectInfo.removeClass("showflex");
-// 	dcAttractionsProject.addClass("showflex");
-// });
 
 cssArt.on("click", function(){
 	projectListing.removeClass("white");

@@ -152,18 +152,21 @@ a {
 }
 
 .listing-wrapper {
-	display: flex;
-	flex-wrap: wrap;
 	height: 80%;
-	justify-content: space-around;
 	overflow: auto;
 	width: 100%;
 }
 
-.about-listing {
+.about-body {
 	box-sizing: border-box;
 	font-family: viga;
 	font-size: 1.2em;
+	padding-left: 2%;
+}
+
+.about-listing {
+	line-height: 30px;
+	margin: auto;
 	padding-top: 2%;
 	width: 90%;
 }

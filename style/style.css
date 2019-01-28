@@ -377,18 +377,22 @@ a {
 
 .email.contact-shrink {
 	top: 50px;
+	transition: top 0.7s ease .6s;
 }
 
 .resume.contact-shrink {
 	top: 50px;
+	transition: top 0.7s ease .6s;
 }
 
 .linkedin.contact-shrink {
 	top: 50px;
+	transition: top 0.7s ease .6s;
 }
 
 .github.contact-shrink {
 	top: 50px;
+	transition: top 0.7s ease .6s;
 }
 
 .bulletpoint {

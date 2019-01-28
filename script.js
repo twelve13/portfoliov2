@@ -3,9 +3,9 @@ $(document).ready(function(){
 var width = $(window).width();
 var height = $(window).height();
 
-var aboutButton = $(".about-button");
-var projectsButton = $(".projects-button");
-var contactButton = $(".contact-button");
+var aboutButton = $("#about-button");
+var projectsButton = $("#projects-button");
+var contactButton = $("#contact-button");
 
 var about = $(".about");
 var aboutClose = $(".about-close");

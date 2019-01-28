@@ -3,12 +3,20 @@
 	padding: 0;	
 }
 
-.about-wrapper, .projects-wrapper {
-	display: none;
+body {
+	background: url(dave-reed-413593-unsplash.jpg);
+	background-size: cover;
+	color: white;
+	font-family: 'Viga', sans-serif;
 }
 
 a {
 	color: white;
+	text-decoration: none;
+}
+
+.about-wrapper, .projects-wrapper {
+	display: none;
 }
 
 .main {
@@ -29,31 +37,21 @@ a {
 .nav {
 	align-items: center;
 	display: flex;
-	font-family: 'Permanent Marker', cursive;
 	font-size: 200%;
 	justify-content: center;
 	margin-left: 2%;
 	width: 53%;
 }
 
-.about-button, .projects-button, .contact-button {
-	align-items: center;
-	background-color: black;
-	border-radius: 18%;
-	box-sizing: border-box;
-	color: white;
+#about-button, #projects-button, #contact-button {
 	cursor: pointer;
-	display: flex;
-	height: 60px;
-	justify-content: center;
-	margin: 2%;
-	padding: 5px;
-	width: 200px;
+	margin: 0 3%;
+	padding: 15px;
+	text-transform: uppercase;
 }
 
 .name {
 	display: flex;
-	font-family: 'Viga', sans-serif;
 	height: 230px;
 	justify-content: center;
 	width: 100%;
@@ -67,7 +65,6 @@ a {
 
 .title-wrapper {
 	display: flex;
-	font-family: 'Permanent Marker', cursive;
 	font-size: 300%;
 	height: 20vh;
 	justify-content: flex-end;
@@ -93,7 +90,7 @@ a {
 
 .about {
 	align-items: space-around;
-	border: black solid 29px;
+	border: white solid 29px;
 	border-radius: 40%;
 	display: flex;
 	flex-wrap: wrap;
@@ -131,22 +128,27 @@ a {
 	transition: height 1s, width 1s, top 2s, left 1s, border-radius 1s;
 }
 
-.about-close {
-	background-color: white;
+.about-close, .projects-close {
 	display: flex;
 	height: 30px;
-	justify-content: center;
-	position: absolute;
+	justify-content: flex-end;
 	text-align: center;
-	width: 100%;
 }
 
-.about-close-button {
-	background-color: black;
-	border-radius: 0 0 25% 25%;
-	color: white;
+.about-close-button, .projects-close-button {
+	align-items: center;
+	background-color: white;
+	border-radius: 0 0 0 25px;
+	color: black;
+	display: flex;
 	font-size: 125%;
-	width: 10%;
+	justify-content: center;
+	height: 35px;
+	width: 50px;
+}
+
+.about-close {
+	width: 100%;
 }
 
 .listing-wrapper {
@@ -163,7 +165,6 @@ a {
 	font-family: viga;
 	font-size: 1.2em;
 	padding-top: 2%;
-	text-align: center;
 	width: 90%;
 }
 
@@ -174,7 +175,6 @@ a {
 	text-align: center;
 	width: 100%;
 }
-
 
 .projects-viewer {
 	height: 0vh;
@@ -193,7 +193,7 @@ a {
 }
 
 .projects {
-	background-color: black;
+	background-color: white;
 	height: 180px;
 	left: 0px;
 	margin: 0 15px;
@@ -205,6 +205,16 @@ a {
 	-o-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 2s, left 0.3s linear 1s;
 	-webkit-transition: height 0.3s linear 1s, width 0.3s linear 1s, top 2s, left 0.3s linear 1s;
 	transition: height 0.6s linear 1s, width 0.6s linear 1s, top 2s, left 0.6s linear 1s;
+}
+
+.projects-wrapper {
+	height: 100%;
+}
+
+#projects-main {
+	align-items: center;
+	display: flex;
+	height: 100%;
 }
 
 .projects.projects-expand { 
@@ -226,52 +236,49 @@ a {
 }
 
 .projects-nav {
-	padding-left: 5%;
+	display: flex;
+	justify-content: space-between
+}
+
+#projects-nav__projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 10px;
+	width: 90%;
 }
 
 .projects-nav input:checked ~ label span {
-	color: white;
+	color: #001d29;
 }
 
 .projects-nav input {
 	display: none;
 }
 
-.projects-close {
-	display: flex;
-	height: 30px;
-	justify-content: flex-end;
-	position: relative;
-	text-align: center;
-	width: 100%;
-}
-
 .projects-close-button {
-	background-color: white;
-	border-radius: 0 0 25% 25%;
-	font-size: 125%;
-	margin: 2px 10px 0 0 ;
-	width: 10%;
+	background-color: black;
+	color: white;
 }
 
 .project-listing {
 	color: gray;
 	font-size: 1.3em;
+	cursor: pointer;
 	width: 100%;
 }
 
 .project-listing:hover{
-	font-size: 1.4em;
+	color: #180029;
 }
 
 .project-info {
+	color: black;
 	display: none;
 }
 
 .project-image, .description {
-	box-sizing: border-box;
 	height: 100%;
-	padding: 5%;
 	width: 50%;
 }
 
@@ -281,16 +288,17 @@ a {
 }
 
 .description {
+	box-sizing: border-box;
 	height: 500px;
+	padding: 5%;
 }
 
 .blurb {
-	color: white;
-	font-size: 1.5em;
+	font-size: 1.3em;
+	line-height: 30px;
 }
 
 .project-links {
-	color: white;
 	font-size: 1.1em;
 	padding-top: 5%;
 	width: 100%;
@@ -300,12 +308,18 @@ a {
 	padding: 1% 0;
 }
 
-.sample-tracker, {
-	color: white;
+.project-links a {
+	color: black;
 }
 
-.sample-tracker-project, .studii-project, .endangered-project, .simon-project, .cache-project, .dc-attractions-project {
+.project-info {
 	display: none;
+}
+
+.project-stack {
+	color: #3d002e;
+	font-style: italic;
+	margin-top: 10px;
 }
 
 .contact-viewer {
@@ -320,7 +334,7 @@ a {
 }
 
 .contact {
-	background-color: black;
+	background-color: white;
 	height: 120px;
 	margin: 0 15px;
 	position: relative;
@@ -375,14 +389,13 @@ a {
 }
 
 .bulletpoint {
-	background-color: black;
+	background-color: white;
 	border-radius: 12px;
 	height: 35px;
 	width: 35px;
 }
 
 .contact-link {
-	font-family: 'Permanent Marker', cursive;
 	font-size: 150%;
 	overflow: hidden;
 	padding-left: 6%;
@@ -405,7 +418,9 @@ a {
 }
 
 .contact-link a {
-	color: black;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .contact-close {
@@ -422,9 +437,6 @@ a {
 	display: flex;
 }
 
-.white{
-	color: white;
-}
 
 
 

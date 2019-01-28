@@ -7,14 +7,16 @@
 	<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+	<!--  forest Photo by Evgeni Evgeniev on Unsplash -->
+	<!-- ferns Photo by Dave Reed on Unsplash -->
 	<div class="projects-viewer"></div>
 
 	<div class="main">
 		<div class="nav-and-contact-viewer">
 			<div class="nav">
-				<div class="about-button">About</div>
-				<div class="projects-button">Projects</div>
-				<div class="contact-button">Contact</div>
+				<div id="about-button">about</div>
+				<div id="projects-button">projects</div>
+				<div id="contact-button">contact</div>
 			</div>
 			
 			<div class="contact-viewer"></div>
@@ -31,13 +33,11 @@
 					<div class="about-wrapper">
 					
 						<div class="listing-wrapper">
-						<div class="about-close"><div class="about-close-button">close</div></div>
+						<div class="about-close"><div class="about-close-button"><span>X</span></div></div>
 							<div class="full-name">Caroline Chen</div>
-							<div class="about-listing">I have always been drawn to both logic and creativity.</div>
-                                
-      						<div class="about-listing">There is something comforting about knowing that <em>this</em> will result in <em>that</em>, and any problem can be solved if you just have the correct tools and know how to use them.  I have enjoyed a past career in forensic science, where I applied critical thinking to solve mysteries and do some social good.</div>  
+							<div class="about-listing">I have always been drawn to both logic and art.  There is something comforting about knowing that <em>this</em> will result in <em>that</em>, and any problem can be solved if you just have the correct tools and know how to use them.  A former forensic scientist, I loved applying critical thinking to solve mysteries and do some social good.  However, I realized I needed more art in my life.</div>  
 
-      						<div class="about-listing">There is something freeing in knowing you can create something new, something different in some way from anything else in existence.  This love of creation has fueled art projects galore, projects of baking, knitting, sewing, and performance.</div>  
+      						<div class="about-listing">There is something freeing in knowing you can create something new, something different in some way from anything else in existence.  This love of creation fuels me on a daily basis.  I am always working on some project in some fashion.</div>  
 
       						<div class="about-listing">The desire to combine what I love from science and from art have led me to where I am now: web development.  As a developer, I aim to draw on the skills I've gained, never stop learning, and create a positive impact for those around me.</div>
 
@@ -48,8 +48,8 @@
 			<div class="projects-outer">
 				<div class="projects">
  					<div class="projects-wrapper">
- 						<div class="projects-close"><div class="projects-close-button">close</div></div>
 						<div class="projects-nav">
+							<div id="projects-nav__projects">
 							<div>
 								<input id="sample-tracker-radio" name="project-radio" type="radio" checked="checked">
 								<label for="sample-tracker-radio"><span class="project-listing">Sample Tracker</span></label>
@@ -70,13 +70,17 @@
 								<input id="css-art-radio" name="project-radio" type="radio">
 								<label for="css-art-radio"><span class="project-listing">CSS Illustrations</span></label>
 							</div>
+						</div>
+							<div class="projects-close"><div class="projects-close-button">X</div></div>
   						</div>
+  						<div id="projects-main">
   						<div class="project-info sample-tracker-project">
  							<div class="project-image">
  								<img src="style/sample-tracker-screenshot.png" alt="sample tracker project screenshot" />
 							</div>
  							<div class="description">
- 								<div class="blurb sample-tracker-blurb">Created an intuitive user interface to allow users to input and edit sample attributes.  Implemented visual cues so users can quickly determine next steps in the sampling workflow.  Built with MongoDB, Mongoose, Express.js, AngularJS, and Node.js.</div>
+ 								<div class="blurb sample-tracker-blurb">Based on previous experience as a lab scientist, I created a proof-of-concept application to track the progress of samples being processed.  The application features an intuitive user interface to allow users to input and edit sample details.  Visual cues help users quickly determine next steps in the sampling workflow.</div>
+ 								<div class="project-stack">MongoDB, Mongoose, Express.js, AngularJS, Node.js</div>
  								<div class="project-links">
  									<p><a href="https://hidden-ravine-98590.herokuapp.com/extractions" target="_blank">&gt; visit the site</a></p>
  									<p><a href="https://github.com/twelve13/sample-tracker" target="_blank">&gt; see the code</a></p>
@@ -88,7 +92,8 @@
  								<img src="style/studii-screenshot.png" alt="studii project screenshot" />
 							</div>
  							<div class="description">
- 								<div class="blurb studii-blurb">Created an organizational application to easily visualize and locate saved bookmarks for web development learning tools.  A full-stack application built using Ruby on Rails.</div>
+ 								<div class="blurb studii-blurb">A full-stack organizational application to easily visualize, organize, and locate saved bookmarks for web development learning tools.</div>
+ 								<div class="project-stack">Ruby on Rails</div>
  								<div class="project-links">
  									<p><a href="https://studii-app.herokuapp.com" target="_blank">&gt; visit the site</a></p>
  									<p><a href="https://github.com/twelve13/studii" target="_blank">&gt; see the code</a></p>
@@ -100,7 +105,8 @@
  								<img src="style/simon-screenshot.png" alt="simon project screenshot" />
  							</div>
  							<div class="description">
- 								<div class="blurb simon-blurb">Exercised basic game logic to develop a simple memory game.  Built with Javascript.</div>
+ 								<div class="blurb simon-blurb">Exercised basic game logic to develop a "Simon" style memory game.  Remember the correct sequence to help the game protagonist get home using the Metro!</div>
+ 								<div class="project-stack">Javascript</div>
  								<div class="project-links">
  									<p><a href="https://twelve13.github.io/project01_simon/" target="_blank">&gt; visit the site</a></p>
  									<p><a href="https://github.com/twelve13/project01_simon" target="_blank">&gt; see the code</a></p>
@@ -112,7 +118,8 @@
  								<img src="style/cache-screenshot.png" alt="cache project screenshot" />
  							</div>
 							<div class="description">	
- 								<div class="blurb cache-blurb">Developed an interface to allow users to create savings accounts, allocate specified amounts into the accounts, and track deposits and withdrawals on the accounts.  Built with MongoDB, Mongoose, Express.js, AngularJS, and Node.js.</div>
+ 								<div class="blurb cache-blurb">Developed a full-stack application to allow users to create savings accounts, allocate specified amounts into the accounts, and track deposits and withdrawals on the accounts.</div>
+ 								<div class="project-stack">MongoDB, Mongoose, Express.js, AngularJS, Node.js</div>
  								<div class="project-links">
  									<p><a href="https://peaceful-sands-66523.herokuapp.com/welcome" target="_blank">&gt; visit the site</a></p>
  									<p><a href="https://github.com/twelve13/budgeting" target="_blank">&gt; see the code</a></p>
@@ -124,12 +131,14 @@
  								<img src="style/css-art-screenshot.png" alt="css art project screenshot" />
  							</div>
 							<div class="description">	
- 								<div class="blurb css-art-blurb">Just for fun, these are some illustrations created with HTML and CSS, and a little Javascript to make them dynamic.</div>
+ 								<div class="blurb css-art-blurb">Just for fun, these are some illustrations created purely with HTML and CSS - one div at a time - and a little Javascript to make them dynamic.</div>
+ 								<div class="project-stack">CSS, Javascript</div>
  								<div class="project-links">
  								<p><a href="https://twelve13.github.io/css-art/" target="_blank">&gt; visit the site</a></p>
  								</div>
  							</div>
  						</div>
+ 					</div>
  					</div>				
  				</div>				
 			</div>
@@ -137,7 +146,7 @@
 			<div class="contact-outer">
 			
 			<div class="contact-item email"><div class="bulletpoint"></div><div class="contact-link">carolinecaroline@gmail.com</div></div>
-			<div class="contact-item resume"><div class="bulletpoint"></div><div class="contact-link"><a href="caroline_chen_resume.pdf" target="_blank">Resume</a></div></div>
+			<div class="contact-item resume"><div class="bulletpoint"></div><div class="contact-link"><a href="caroline_chen_resume.pdf" target="_blank">resume</a></div></div>
 			<div class="contact-item linkedin"><div class="bulletpoint"></div><div class="contact-link"><a href="https://www.linkedin.com/in/caroline-chen-a9139413b/" target="_blank">linkedin</a></div></div>
 			<div class="contact-item github"><div class="bulletpoint"></div><div class="contact-link"><a href="https://github.com/twelve13" target="_blank">github</a></div></div>
 			<div class="contact-item"><div class="contact-close">X</div></div>

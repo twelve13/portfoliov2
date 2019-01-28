@@ -5,6 +5,7 @@
 
 body {
 	background: url(dave-reed-413593-unsplash.jpg);
+	background-position-y: center;
 	background-size: cover;
 	color: white;
 	font-family: 'Viga', sans-serif;

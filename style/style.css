@@ -29,24 +29,19 @@ a {
 	width: 100%;
 }
 
-.nav-and-contact-viewer {
-	display: flex;
-	height: 35vh;
-	width: 100%;
-}
-
 .nav {
 	align-items: center;
 	display: flex;
 	font-size: 200%;
-	justify-content: center;
+	height: 35vh;
+	justify-content: flex-start;
 	margin-left: 2%;
-	width: 53%;
+	width: 100%;
 }
 
 #about-button, #projects-button, #contact-button {
 	cursor: pointer;
-	margin: 0 3%;
+	margin: 0 2%;
 	padding: 15px;
 	text-transform: uppercase;
 }
@@ -325,11 +320,6 @@ a {
 	margin-top: 10px;
 }
 
-.contact-viewer {
-	align-items: center;
-	display: flex;
-	width: 45%;
-}
 .contact-outer {
 	height: 300px;
 	position: relative;
@@ -443,6 +433,116 @@ a {
 .showflex {
 	display: flex;
 }
+
+@media (max-width: 950px) {
+	.nav {
+		display:block;
+	}
+
+	#about-button, #projects-button, #contact-button {
+		width: 200px;
+	}
+}
+
+@media (max-width: 480px){
+
+	.name {
+		height: 100px;
+	}
+
+	.name-letter {
+		font-size: 550%;
+	}
+
+	.about-outer {
+		width: 50px;
+	}	
+
+	.about, .about.about-shrink {
+		border: white solid 12px;
+		height: 28px;
+		top: 30px;
+		width: 22px;
+	}
+
+	.about.about-expand { 
+		top: 50vh;
+	}
+
+	.projects-outer {
+		width: 30px;
+	}
+
+	.projects, .projects.projects-shrink {
+		height: 73px;
+		margin: 0 5px;
+		top: 7px;
+		width: 13px;
+	}
+
+	.contact-outer {
+		width: 20px;
+	}
+
+	.contact {
+		height: 47px;
+		margin: 0;
+		top: 33px;
+		width: 13px;
+	}
+
+	.contact-item {
+		left: 0;
+		font-size: 80%;
+		top: 10px;
+		width: 400px;
+	}
+
+	.bulletpoint {
+		height: 15px;
+		width: 15px;
+	}
+
+	.nav {
+		font-size: 140%;
+	}
+
+	#about-button, #projects-button, #contact-button {
+		margin: 0;
+	}
+
+	.email.contact-shrink, .resume.contact-shrink, .linkedin.contact-shrink, .github.contact-shrink {
+		left: 0;
+		top: 10px;
+	}
+
+	.contact-close {
+		font-size: 12px;
+		margin: 2px 2px;
+	}
+
+	.title-wrapper {
+		font-size: 150%;
+		margin-top: 0;
+	}
+
+	#projects-nav__projects{
+		display: block;
+	}
+
+	#projects-main .showflex {
+		display: block;
+	}
+
+	.project-image, .description {
+		width: 100%;
+	}
+
+	.projects.projects-expand { 
+		width: 95vw;
+	}
+}
+
 
 
 

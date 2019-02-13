@@ -471,6 +471,11 @@ a {
 		top: 50vh;
 	}
 
+	.full-name {
+		font-size: 200%;
+		margin: 0;
+	}
+
 	.projects-outer {
 		width: 30px;
 	}

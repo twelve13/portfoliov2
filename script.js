@@ -30,6 +30,11 @@ var cssArtProject = $(".css-art-project");
 
 var label = $("label");
 
+var readNext = $("#read-next");
+var readPrevious = $("#read-previous");
+var panel1 = $("#about-panel1");
+var panel2 = $("#about-panel2");
+
 const movedown = function() {
 	var y = height;
 	var id = setInterval(scrolldown, 10);
@@ -89,6 +94,20 @@ aboutClose.click(function(){
 	about.addClass("about-shrink");
 	aboutWrapper.removeClass("showme");
 	moveupAbout();
+});
+
+readNext.click(function(){
+	panel1.removeClass("show-panel");
+	panel1.addClass("hide-panel");
+	panel2.removeClass("hide-panel");
+	panel2.addClass("show-panel");
+});
+
+readPrevious.click(function(){
+	panel1.addClass("show-panel");
+	panel1.removeClass("hide-panel");
+	panel2.addClass("hide-panel");
+	panel2.removeClass("show-panel");
 });
 
 projectsButton.click(function() {

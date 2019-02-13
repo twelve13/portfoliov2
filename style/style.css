@@ -466,13 +466,17 @@ a {
 	}
 
 	.about.about-expand { 
-		left: -30vw;
-		height: 90vh;
+		left: -32vw;
+		height: 88vh;
 		top: 50vh;
 	}
 
+	.about-listing {
+		line-height: 28px;
+	}
+
 	.full-name {
-		font-size: 200%;
+		font-size: 150%;
 		margin: 0;
 	}
 

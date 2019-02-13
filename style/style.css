@@ -148,7 +148,6 @@ a {
 }
 
 .listing-wrapper {
-	height: 80%;
 	overflow: auto;
 	width: 100%;
 }
@@ -468,11 +467,11 @@ a {
 	.about.about-expand { 
 		left: -32vw;
 		height: 88vh;
-		top: 50vh;
+		top: 49vh;
 	}
 
 	.about-listing {
-		line-height: 28px;
+		line-height: 27px;
 	}
 
 	.full-name {

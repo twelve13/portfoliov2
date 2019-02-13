@@ -474,11 +474,15 @@ a {
 	.about.about-expand { 
 		left: -32vw;
 		height: 86vh;
-		top: 49vh;
+		top: 47vh;
+	}
+
+	.about-body {
+		font-size: 1.2em;
 	}
 
 	.about-panel {
-		line-height: 27px;
+		line-height: 26px;
 	}
 
 	.hide-panel {

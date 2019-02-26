@@ -24,7 +24,7 @@ var contactClose = $(".contact-close");
 
 var sampleTrackerProject = $(".sample-tracker-project");
 var studiiProject = $(".studii-project");
-var simonProject = $(".simon-project");
+var knittingProject = $(".knitting-project");
 var cacheProject = $(".cache-project");
 var cssArtProject = $(".css-art-project");
 
@@ -106,7 +106,7 @@ readNext.click(function(){
 readPrevious.click(function(){
 	panel1.addClass("show-panel");
 	panel1.removeClass("hide-panel");
-	panel2.addClass("hide-panel");
+	panel2.addClass("hide-panel")
 	panel2.removeClass("show-panel");
 });
 
@@ -144,8 +144,8 @@ label.on("click", function(){
 		case "studii-radio":
 			studiiProject.addClass("showflex");
 			break;
-		case "metro-simon-radio":
-			simonProject.addClass("showflex");
+		case "knitting-radio":
+			knittingProject.addClass("showflex");
 			break;
 		case "css-art-radio":
 			cssArtProject.addClass("showflex");

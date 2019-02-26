@@ -487,9 +487,10 @@ a {
 	}
 
 	.about.about-expand { 
-		left: -32vw;
-		height: 86vh;
+		left: -34vw;
+		height: 80vh;
 		top: 47vh;
+		width: 84vw;
 	}
 
 	.about-body {
@@ -602,7 +603,7 @@ a {
 	}
 
 	.blurb {
-		font-size: 1.1em;
+		font-size: 1em;
 		line-height: 24px;
 	}
 }

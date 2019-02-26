@@ -487,8 +487,8 @@ a {
 	}
 
 	.about.about-expand { 
-		left: -34vw;
-		height: 80vh;
+		left: -36vw;
+		height: 76vh;
 		top: 47vh;
 		width: 84vw;
 	}
@@ -498,7 +498,7 @@ a {
 	}
 
 	.about-panel {
-		line-height: 26px;
+		line-height: 22px;
 	}
 
 	.hide-panel {
@@ -538,6 +538,10 @@ a {
 		margin: 0 5px;
 		top: 7px;
 		width: 13px;
+	}
+
+	.project-stack {
+		font-size: 0.8em;
 	}
 
 	.contact-outer {

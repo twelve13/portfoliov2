@@ -432,13 +432,9 @@ a {
 	text-decoration: underline;
 }
 
-.showme {
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .showflex {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 @media (max-width: 950px) {
@@ -449,10 +445,28 @@ a {
 	#about-button, #projects-button, #contact-button {
 		width: 200px;
 	}
+
+	.project-image img {
+		height: 40%;
+		width: 40%;
+	}
+
+	.project-links {
+		top: 150px;
+		left: 50%;
+		position: absolute;
+	}
+
+	.project-image, .description {
+		width: 100%;
+	}
+
+	.projects.projects-expand { 
+		width: 88vw;
+	}
 }
 
 @media (max-width: 480px){
-
 	.name {
 		height: 100px;
 	}
@@ -521,17 +535,6 @@ a {
 		width: 13px;
 	}
 
-	.project-image img {
-		height: 50%;
-		width: 50%;
-	}
-
-	.project-links {
-		bottom: 400px;
-		left: 200px;
-		position: absolute;
-	}
-
 	.contact-outer {
 		width: 20px;
 	}
@@ -590,17 +593,9 @@ a {
 		display: block;
 	}
 
-	.project-image, .description {
-		width: 100%;
-	}
-
-	.projects.projects-expand { 
-		width: 90vw;
-	}
-
 	.blurb {
 		font-size: 1.1em;
-		line-height: 26px;
+		line-height: 24px;
 	}
 }
 

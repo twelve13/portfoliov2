@@ -83,7 +83,7 @@ aboutButton.click(function(){
 	about.removeClass("about-shrink");
 	about.addClass("about-expand");
 	setTimeout(function(){
-		aboutWrapper.addClass("showme");
+		aboutWrapper.addClass("showflex");
 	}, 1000);
 	aboutViewer.addClass("show-about-viewer");
 	movedown();	
@@ -92,7 +92,7 @@ aboutButton.click(function(){
 aboutClose.click(function(){
 	about.removeClass("about-expand");
 	about.addClass("about-shrink");
-	aboutWrapper.removeClass("showme");
+	aboutWrapper.removeClass("showflex");
 	moveupAbout();
 });
 
@@ -117,7 +117,7 @@ projectsButton.click(function() {
 	projects.removeClass("projects-shrink");
 	projects.addClass("projects-expand");
 	setTimeout(function(){
-		projectsWrapper.addClass("showme");
+		projectsWrapper.addClass("showflex");
 	}, 1000);
 	projectsViewer.addClass("showprojects")
 	moveup();
@@ -126,7 +126,7 @@ projectsButton.click(function() {
 projectsClose.click(function(){
 	projects.removeClass("projects-expand");
 	projects.addClass("projects-shrink");
-	projectsWrapper.removeClass("showme");
+	projectsWrapper.removeClass("showflex");
 	projectsViewer.removeClass("showprojects")
 });
 

@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
 var width = $(window).width();
 var height = $(window).height();
 
@@ -7,7 +9,7 @@ var aboutButton = $("#about-button");
 var projectsButton = $("#projects-button");
 var contactButton = $("#contact-button");
 
-var about = $(".about");
+var about = document.getElementById("about");
 var aboutClose = $(".about-close");
 var aboutWrapper = $(".about-wrapper");
 var aboutViewer = $(".about-viewer");
@@ -35,17 +37,32 @@ var readPrevious = $("#read-previous");
 var panel1 = $("#about-panel1");
 var panel2 = $("#about-panel2");
 
-const movedown = function() {
-	var y = height;
+var aboutPosition = about.getBoundingClientRect();
+
+
+const showAbout = function() {
 	var id = setInterval(scrolldown, 10);
+	var scrollTo = 0;
+	var top = 0;
+	var moveHoriz = 0;
+	var aboutWidth = aboutPosition.width;
+
+	about.style.borderRadius = "50%";
 
 	//need conditional or it'll scroll down forever
 	function scrolldown() {
-		if(y > 4*height){
+		if(scrollTo > height){
 		 	clearInterval(id);
 		} else {
-			window.scroll(0, y);
-			y = y + 10;
+			scrollTo+=5;
+			aboutWidth+=4;
+			moveHoriz +=2;
+			top+=3;
+			about.style.top = `${top}px`;
+			about.style.left = `-${moveHoriz}px`;
+			about.style.width = `${aboutWidth}px`;
+			about.style.height = `${aboutWidth}px`;
+			window.scroll(0, scrollTo);
 		};
 	};
 };
@@ -80,13 +97,11 @@ const moveupAbout = function() {
 
 
 aboutButton.click(function(){
-	about.removeClass("about-shrink");
-	about.addClass("about-expand");
-	setTimeout(function(){
-		aboutWrapper.addClass("showflex");
-	}, 1000);
-	aboutViewer.addClass("show-about-viewer");
-	movedown();	
+	// about.removeClass("about-shrink");
+	// about.classList.add("about-expand");
+	aboutViewer.addClass("show");
+
+	showAbout();	
 });
 
 aboutClose.click(function(){

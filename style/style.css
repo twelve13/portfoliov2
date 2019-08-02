@@ -4,7 +4,7 @@
 }
 
 body {
-	background: url(dave-reed-413593-unsplash.jpg);
+	background-color: black;
 	background-position-y: center;
 	background-size: cover;
 	color: white;
@@ -16,7 +16,7 @@ a {
 	text-decoration: none;
 }
 
-.about-wrapper, .projects-wrapper {
+.projects-wrapper {
 	display: none;
 }
 
@@ -50,6 +50,7 @@ a {
 	display: flex;
 	height: 230px;
 	justify-content: center;
+	position: relative;
 	width: 100%;
 }
 
@@ -70,47 +71,41 @@ a {
 
 
 .about-viewer {
+	color: black;
 	display: none;
-}
-
-.show-about-viewer {
-	height: 100vh;
+		height: 100vh;
 	width: 100%;
 }
 
-.about-outer {
-	height: 300px;
-	position: relative;
-	width: 120px;
+.about-viewer.show {
+	align-items: center;
+	display: flex;
 }
 
-.about {
-	align-items: space-around;
-	border: white solid 29px;
-	border-radius: 40%;
-	display: flex;
-	flex-wrap: wrap;
-	height: 83px;
-	justify-content: center;
-	left: 0px;
-	margin-bottom: 10vh;
-	overflow: hidden;
+.about-wrapper {
+	align-self: flex-end;
+	height: 140px;
 	position: relative;
-	top: 82px;
-	width: 54px;
-	-moz-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
+	width: 115px;
+}
+
+#about {
+	color: black;
+	overflow: hidden;
+	background-color: white;
+	border-radius: 40%;
+	height: 140px;
+	position: relative;
+	width: 115px;
+/*	-moz-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
 	-o-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
 	-webkit-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
-	transition: height 0.6s linear 1s, width 0.6s linear 1s, top 2s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
+	transition: height 0.6s linear 1s, width 0.6s linear 1s, top 2s, left 0.6s linear 1s;*/
+	/*transition: height 0.6s linear 1s, width 0.6s linear 1s, top 2s, left 0.6s linear 1s;*/
+
+	z-index: -1;
 }
 
-.about.about-expand { 
-	border-radius: 5%;
-	height: 80vh;
-	left: -41vw;
-	top: 100vh;
-	width: 90vw;
-}
 
 .about.about-shrink { 
 	border-radius: 40%;

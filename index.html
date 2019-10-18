@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Caroline Chen Portfolio</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker|Viga"">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker|Viga">
+	<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Liu+Jian+Mao+Cao|Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<!--  forest Photo by Evgeni Evgeniev on Unsplash -->
-	<!-- ferns Photo by Dave Reed on Unsplash -->
-	<div class="projects-viewer"></div>
-
-	<div class="main">
-		<div class="nav">
-			<div id="about-button">about</div>
-			<div id="projects-button">projects</div>
-			<div id="contact-button">contact</div>
-		</div>
-
-		<div class="name">
-			<div class="name-letter">C</div>
-			<div class="name-letter">a</div>
-			<div class="name-letter">r</div>
-
-			<div class="about-outer">
-				<div class="about">
-					
-					<div class="about-wrapper">
-					
-						<div class="listing-wrapper">
-						<div class="about-close"><div class="about-close-button"><span>X</span></div></div>
-							<div class="full-name">Caroline Chen</div>
-							<div class="about-body">
-								<div class="about-panel" id="about-panel1">
-									<p>I have always been drawn to both logic and art.  There is something comforting about knowing that <em>this</em> will result in <em>that</em>, and any problem can be solved if you just have the correct tools and know how to use them.  A former forensic scientist, I loved applying critical thinking to solve mysteries and do some social good.  However, I realized I needed more art in my life.</p>
-
-									<div id="read-next">Next &gt;</div>
-								</div>  
-
-								<div class="about-panel hide-panel" id="about-panel2">
-									<p>There is something freeing in knowing you can create something new, something different in some way from anything else in existence.  This love of creation fuels me on a daily basis.  I am always working on some project in some fashion.</p>
-									<p>The desire to combine what I love from science and from art have led me to where I am now: web development.  As a developer, I aim to draw on the skills I've gained, never stop learning, and create a positive impact for those around me.</p>
-
-									<div id="read-previous">&lt; Previous</div>
-								</div>
-      						</div>
-						</div>
-					</div>
-				</div>
+	<div class="main">	
+		<header>	
+			<div class="name">
+				<div class="name-letter">C</div>
+				<div class="name-letter">A</div>
+				<div class="name-letter">R</div>
+				<div class="name-letter">O</div>
+				<div class="name-letter">L</div>
+				<div class="name-letter">I</div>
+				<div class="name-letter">N</div>
+				<div class="name-letter">E</div>
 			</div>
-			<div class="projects-outer">
-				<div class="projects">
+			<div class="nav">
+				<ul>
+					<li id="nav-about">about</li>
+					<li id="nav-projects">projects</li>
+					<li id="nav-contact">contact</li>
+				</ul>
+			</div>
+			<div id="avatar"><div id="head"></div></div>
+		</header>
+
+
+		<div class="title-wrapper">
+			<!-- <div class="title">I create <br> with lines of code</div> -->
+		</div>
+		
+
+			
+			<div class="about">
+				
+				<div class="about-body">						
+					<p>I have always been drawn to both logic and art.  There is something comforting about knowing that <em>this</em> will result in <em>that</em>, and any problem can be solved if you just have the correct tools and know how to use them.  A former forensic scientist, I loved applying critical thinking to solve mysteries and do some social good.  However, I realized I needed more art in my life.</p>
+					<p>There is something freeing in knowing you can create something new, something different in some way from anything else in existence.  This love of creation fuels me on a daily basis.  I am always working on some project in some fashion.</p>
+					<p>The desire to combine what I love from science and from art have led me to where I am now: web development.  As a developer, I aim to draw on the skills I've gained, never stop learning, and create a positive impact for those around me.</p>
+					<div id="about-icons">icon icon icon</div>
+      				
+				</div>
+				<!-- <div class="section-title">about me</div> -->
+			</div>
+			
+		
+			<div class="projects">
  					<div class="projects-wrapper">
 						<div class="projects-nav">
 							<div id="projects-nav__projects">
@@ -144,8 +145,8 @@
  						</div>
  					</div>
  					</div>				
- 				</div>				
-			</div>
+ 			</div>				
+			
 			
 			<div class="contact-outer">
 			
@@ -155,18 +156,10 @@
 			<div class="contact-item github"><div class="bulletpoint"></div><div class="contact-link"><a href="https://github.com/twelve13" target="_blank">github</a></div></div>
 			<div class="contact-item"><div class="contact-close">X</div></div>
 				<div class="contact"></div>
-			</div>
-		
-			<div class="name-letter">n</div>
-			<div class="name-letter">e</div>
-		</div>
+			</div>	
 
-		<div class="title-wrapper">
-			<div class="title">Web Developer</div>
-		</div>
 	</div>
-	
-	<div class="about-viewer"></div>
+
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
 	<script src="script.js"></script>

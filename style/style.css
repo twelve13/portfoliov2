@@ -4,15 +4,10 @@
 }
 
 body {
-	background: url(dave-reed-413593-unsplash.jpg);
-	background-position-y: center;
-	background-size: cover;
-	color: white;
 	font-family: 'Viga', sans-serif;
 }
 
 a {
-	color: white;
 	text-decoration: none;
 }
 
@@ -86,7 +81,7 @@ a {
 
 .about {
 	align-items: space-around;
-	border: white solid 29px;
+	border: black solid 29px;
 	border-radius: 40%;
 	display: flex;
 	flex-wrap: wrap;
@@ -197,7 +192,7 @@ a {
 }
 
 .projects {
-	background-color: white;
+	background-color: black;
 	height: 180px;
 	left: 0px;
 	margin: 0 15px;
@@ -217,6 +212,8 @@ a {
 
 #projects-main {
 	align-items: flex-start;
+	background-color: white;
+	border: solid 30px black;
 	display: flex;
 }
 
@@ -253,7 +250,7 @@ a {
 }
 
 .projects-nav input:checked ~ label span {
-	color: #001d29;
+	border-bottom: solid 3px white;
 }
 
 .projects-nav input {
@@ -266,14 +263,10 @@ a {
 }
 
 .project-listing {
-	color: gray;
+	color: white;
 	font-size: 1.3em;
 	cursor: pointer;
 	width: 100%;
-}
-
-.project-listing:hover{
-	color: #180029;
 }
 
 .project-info {
@@ -333,7 +326,7 @@ a {
 }
 
 .contact {
-	background-color: white;
+	background-color: black;
 	height: 120px;
 	margin: 0 15px;
 	position: relative;
@@ -392,7 +385,7 @@ a {
 }
 
 .bulletpoint {
-	background-color: white;
+	background-color: black;
 	border-radius: 12px;
 	height: 35px;
 	width: 35px;
@@ -421,7 +414,7 @@ a {
 }
 
 .contact-link a {
-	color: white;
+	color: black;
 	cursor: pointer;
 	text-decoration: none;
 }

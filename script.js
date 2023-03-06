@@ -8,7 +8,7 @@ var projectsButton = $("#projects-button");
 var contactButton = $("#contact-button");
 
 var about = $(".about");
-var aboutClose = $(".about-close");
+var aboutClose = $(".about-close-button");
 var aboutWrapper = $(".about-wrapper");
 var aboutViewer = $(".about-viewer");
 
@@ -41,7 +41,7 @@ const movedown = function() {
 
 	//need conditional or it'll scroll down forever
 	function scrolldown() {
-		if(y > 4*height){
+		if(y > 3*height){
 		 	clearInterval(id);
 		} else {
 			window.scroll(0, y);
@@ -94,20 +94,6 @@ aboutClose.click(function(){
 	about.addClass("about-shrink");
 	aboutWrapper.removeClass("showflex");
 	moveupAbout();
-});
-
-readNext.click(function(){
-	panel1.removeClass("show-panel");
-	panel1.addClass("hide-panel");
-	panel2.removeClass("hide-panel");
-	panel2.addClass("show-panel");
-});
-
-readPrevious.click(function(){
-	panel1.addClass("show-panel");
-	panel1.removeClass("hide-panel");
-	panel2.addClass("hide-panel")
-	panel2.removeClass("show-panel");
 });
 
 projectsButton.click(function() {

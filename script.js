@@ -8,9 +8,9 @@ var projectsButton = $("#projects-button");
 var contactButton = $("#contact-button");
 
 var about = $(".about");
+var aboutFrame = $(".about-frame");
 var aboutClose = $(".about-close-button");
 var aboutWrapper = $(".about-wrapper");
-var aboutViewer = $(".about-viewer");
 
 var projects = $(".projects");
 var projectsClose = $(".projects-close");
@@ -81,17 +81,20 @@ const moveupAbout = function() {
 
 aboutButton.click(function(){
 	about.removeClass("about-shrink");
+	aboutFrame.removeClass("about-shrink");
 	about.addClass("about-expand");
+	aboutFrame.addClass("about-expand");
 	setTimeout(function(){
 		aboutWrapper.addClass("showflex");
 	}, 1000);
-	aboutViewer.addClass("show-about-viewer");
 	movedown();	
 });
 
 aboutClose.click(function(){
 	about.removeClass("about-expand");
+	aboutFrame.removeClass("about-expand");
 	about.addClass("about-shrink");
+	aboutFrame.addClass("about-shrink");
 	aboutWrapper.removeClass("showflex");
 	moveupAbout();
 });

@@ -22,7 +22,7 @@ var contactLink = $(".contact-link");
 var contactItem = $(".contact-item");
 var contactClose = $(".contact-close");
 
-var sampleTrackerProject = $(".sample-tracker-project");
+var taskTrackerProject = $(".task-tracker-project");
 var studiiProject = $(".studii-project");
 var knittingProject = $(".knitting-project");
 var cacheProject = $(".cache-project");
@@ -100,8 +100,8 @@ aboutClose.click(function(){
 });
 
 projectsButton.click(function() {
-	if(document.getElementById("sample-tracker-radio").checked) {
-		sampleTrackerProject.addClass("showflex");
+	if(document.getElementById("task-tracker-radio").checked) {
+		taskTrackerProject.addClass("showflex");
 	}
 	projects.removeClass("projects-shrink");
 	projects.addClass("projects-expand");
@@ -122,10 +122,10 @@ projectsClose.click(function(){
 label.on("click", function(){
 	var selectedProjectRadio = this.getAttribute("for");
 	projectInfo.removeClass("showflex");
-	sampleTrackerProject.removeClass("showflex");
+	taskTrackerProject.removeClass("showflex");
 	switch(selectedProjectRadio) {
-		case "sample-tracker-radio":
-			sampleTrackerProject.addClass("showflex");
+		case "task-tracker-radio":
+			taskTrackerProject.addClass("showflex");
 			break;
 		case "cache-radio":
 			cacheProject.addClass("showflex");

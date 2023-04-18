@@ -51,6 +51,21 @@ a {
 	text-transform: uppercase;
 }
 
+#about-button:hover {
+	background-color: rgba(0, 255, 255, 0.8);
+	box-shadow: 0px 0px 40px 20px #0ff;
+}
+
+#projects-button:hover {
+	background-color: rgba(140, 255, 0, 0.8);
+	box-shadow: 0px 0px 40px 20px #8cff00;
+}
+
+#contact-button:hover {
+	background-color: rgba(246, 255, 0, 0.8);
+	box-shadow: 0px 0px 40px 20px #f6ff00;
+}
+
 .name {
 	display: flex;
 	height: 230px;
@@ -246,12 +261,13 @@ h2 {
 	background-color: white;
 	border: solid 30px black;
 	display: flex;
+	height: 80%;
 }
 
 .projects.projects-expand { 
 	height: 90vh;
 	left: -50vw;
-	top: -130vh;
+	top: -140vh;
 	width: 90vw;
 }
 
@@ -290,6 +306,7 @@ h2 {
 
 .projects-close-button {
 	background-color: black;
+	border: none;
 	color: white;
 }
 

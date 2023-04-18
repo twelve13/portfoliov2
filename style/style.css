@@ -315,6 +315,11 @@ h2 {
 	width: 100%;
 }
 
+.task-tracker-project .project-image img {
+	box-sizing: border-box;
+	padding: 20px;
+}
+
 .description {
 	box-sizing: border-box;
 	height: 500px;

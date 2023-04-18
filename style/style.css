@@ -257,7 +257,7 @@ h2 {
 }
 
 #projects-main {
-	align-items: flex-start;
+	align-items: center;
 	background-color: white;
 	border: solid 30px black;
 	display: flex;
@@ -328,13 +328,10 @@ h2 {
 }
 
 .project-image img {
-	height: 100%;
-	width: 100%;
-}
-
-.task-tracker-project .project-image img {
 	box-sizing: border-box;
-	padding: 20px;
+	height: 100%;
+	padding: 4% 5%;
+	width: 100%;
 }
 
 .description {

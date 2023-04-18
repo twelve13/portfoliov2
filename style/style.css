@@ -73,20 +73,22 @@ a {
 	width: 80%;
 }
 
-
-.about-viewer {
-	display: none;
-}
-
-.show-about-viewer {
-	height: 100vh;
-	width: 100%;
-}
-
 .about-outer {
 	height: 300px;
 	position: relative;
 	width: 120px;
+}
+
+.about-frame {
+	height: 83px;
+	position: relative;
+	top: 82px;
+	left: 0px;
+	width: 54px;
+	-moz-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
+	-o-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
+	-webkit-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
+	transition: height 0.6s linear 1s, width 0.6s linear 1s, top 2s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
 }
 
 .about {
@@ -98,10 +100,9 @@ a {
 	height: 83px;
 	justify-content: center;
 	left: 0px;
-	margin-bottom: 10vh;
 	overflow: hidden;
 	position: relative;
-	top: 82px;
+	top: 0;
 	width: 54px;
 	-moz-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
 	-o-transition: height 0.6s linear 1s, width 0.6s linear 1s, top 1s, left 0.6s linear 1s, border-radius 0.6s linear 1s;
@@ -112,6 +113,11 @@ a {
 .about.about-expand { 
 	border-radius: 5%;
 	height: 70vh;
+	width: 80vw;
+}
+
+.about-frame.about-expand { 
+	height: 90vh;
 	left: -36vw;
 	top: 100vh;
 	width: 80vw;
@@ -119,6 +125,15 @@ a {
 
 .about.about-shrink { 
 	border-radius: 40%;
+	height: 83px;
+	width: 54px;
+	-moz-transition: height 1s, width 1s, top 2s, left 1s, border-radius 1s;
+	-o-transition: height 1s, width 1s, top 2s, left 1s, border-radius 1s;
+	-webkit-transition: height 1s, width 2s, top 1s, left 1s, border-radius 1s;
+	transition: height 1s, width 1s, top 2s, left 1s, border-radius 1s;
+}
+
+.about-frame.about-shrink { 
 	height: 83px;
 	left: 0px;
 	top: 82px;
@@ -150,6 +165,7 @@ a {
 	background-color: white;
 	border-radius: 0 0 0 25px;
 	color: black;
+	cursor: pointer;
 	display: flex;
 	font-size: 36px;
 	justify-content: center;
@@ -158,6 +174,9 @@ a {
 }
 
 .about-close-button {
+	background-color: white;
+	border: none;
+	cursor: pointer;
 	font-size: 36px;
 	position: absolute;
 	top: 30px;
@@ -428,6 +447,9 @@ h2 {
 }
 
 .contact-close {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
 	font-size: 20px;
 	margin: 10px 10px;
 	text-decoration: underline;

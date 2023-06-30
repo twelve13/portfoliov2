@@ -23,7 +23,7 @@ var contactItem = $(".contact-item");
 var contactClose = $(".contact-close");
 
 var taskTrackerProject = $(".task-tracker-project");
-var studiiProject = $(".studii-project");
+var dataVizProject = $(".data-viz-project");
 var knittingProject = $(".knitting-project");
 var cacheProject = $(".cache-project");
 var cssArtProject = $(".css-art-project");
@@ -130,8 +130,8 @@ label.on("click", function(){
 		case "cache-radio":
 			cacheProject.addClass("showflex");
 			break;
-		case "studii-radio":
-			studiiProject.addClass("showflex");
+		case "data-viz-radio":
+			dataVizProject.addClass("showflex");
 			break;
 		case "knitting-radio":
 			knittingProject.addClass("showflex");

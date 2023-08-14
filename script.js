@@ -23,10 +23,6 @@ var contactItem = $(".contact-item");
 var contactClose = $(".contact-close");
 
 var taskTrackerProject = $(".task-tracker-project");
-var dataVizProject = $(".data-viz-project");
-var knittingProject = $(".knitting-project");
-var cacheProject = $(".cache-project");
-var cssArtProject = $(".css-art-project");
 
 var label = $("label");
 
@@ -108,7 +104,7 @@ projectsButton.click(function() {
 	setTimeout(function(){
 		projectsWrapper.addClass("showflex");
 	}, 1000);
-	projectsViewer.addClass("showprojects")
+	projectsViewer.addClass("showprojects");
 	moveup();
 });
 
@@ -116,33 +112,15 @@ projectsClose.click(function(){
 	projects.removeClass("projects-expand");
 	projects.addClass("projects-shrink");
 	projectsWrapper.removeClass("showflex");
-	projectsViewer.removeClass("showprojects")
+	projectsViewer.removeClass("showprojects");
 });
 
 label.on("click", function(){
-	var selectedProjectRadio = this.getAttribute("for");
 	projectInfo.removeClass("showflex");
 	taskTrackerProject.removeClass("showflex");
-	switch(selectedProjectRadio) {
-		case "task-tracker-radio":
-			taskTrackerProject.addClass("showflex");
-			break;
-		case "cache-radio":
-			cacheProject.addClass("showflex");
-			break;
-		case "data-viz-radio":
-			dataVizProject.addClass("showflex");
-			break;
-		case "knitting-radio":
-			knittingProject.addClass("showflex");
-			break;
-		case "css-art-radio":
-			cssArtProject.addClass("showflex");
-			break;
-		default:
-			sampleTrackerProject.addClass("showflex");
-			break;
-	}
+	let selectedProjectName = this.getAttribute("data-project");
+	let selectedProjectElement = document.querySelector(`.${selectedProjectName}`);
+	selectedProjectElement.classList.add("showflex");
 })
 
 
